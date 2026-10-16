@@ -237,7 +237,9 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;color:var(--muted);fon
       },180);
     }
   });
-$('reset').addEventListener('click',()=>{form.reset();error.textContent='';error.style.display='none';requestAnimationFrame(()=>{calc();});});
+
+$('reset').addEventListener('click',()=>{clearTimeout(inputTimer);form.reset();error.textContent='';error.style.display='none';requestAnimationFrame(()=>{calc();});});
+
   let resizeTimer;window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>{const msg=validate();if(!msg)drawChart(num('savings'),num('monthly'),num('returnRate'),num('retirementAge')-num('currentAge'));},100)});
   // Initial values are safe defaults for a visible prototype; all output is recalculated from the form.
   calc();
