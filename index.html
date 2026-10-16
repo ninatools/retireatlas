@@ -225,18 +225,8 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;color:var(--muted);fon
   }
   function shortMoney(v){if(v>=1e6)return '$'+(v/1e6).toFixed(1)+'M';if(v>=1000)return '$'+(v/1000).toFixed(0)+'k';return '$'+Math.round(v)}
   form.addEventListener('submit',e=>{e.preventDefault();const msg=validate();if(msg){error.textContent=msg;error.style.display='block';return;}error.textContent='';error.style.display='none';calc();});
-  // Recalculate as soon as a valid value changes, so users do not have to press Calculate every time.
-  let inputTimer;
-  form.addEventListener('input',e=>{
-    if(e.target.matches('input')){
-      clearTimeout(inputTimer);
-      inputTimer=setTimeout(()=>{
-        const msg=validate();
-        if(msg){error.textContent=msg;error.style.display='block';return;}
-        error.textContent='';error.style.display='none';calc();
-      },180);
-    }
-  });
+  
+    
 
 $('reset').addEventListener('click',()=>{form.reset();error.textContent='';error.style.display='none';calc();});
 
