@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore retirement destinations around the world. Compare your lifestyle preferences and discover countries to consider for retirement.">
+<meta name="theme-color" content="#6d5ce7">
+<title>Where Can I Retire? | RetireAtlas</title>
+
+<style>
+:root {
+  --purple: #6d5ce7;
+  --dark: #24213a;
+  --muted: #6b7280;
+  --light: #f7f6ff;
+  --border: #e7e5f2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: #fff;
+  line-height: 1.6;
+}
+header {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.logo {
+  color: var(--purple);
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.home {
+  color: var(--purple);
+  text-decoration: none;
+  font-weight: 700;
+}
+.hero {
+  text-align: center;
+  padding: 55px 20px 35px;
+  background: linear-gradient(180deg, #f2efff, #fff);
+}
+.hero h1 {
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.2;
+  margin: 0 auto 16px;
+  max-width: 800px;
+}
+.hero p {
+  max-width: 680px;
+  margin: auto;
+  color: var(--muted);
+  font-size: 17px;
+}
+main {
+  width: min(100% - 32px, 1050px);
+  margin: 30px auto 55px;
+}
+.section-title { margin-bottom: 8px; }
+.intro { color: var(--muted); margin-top: 0; }
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 22px 0 42px;
+}
+.country {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: white;
+}
+.country img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.country-content { padding: 15px; }
+.country h3 { margin: 0 0 5px; }
+.country p { margin: 0; color: var(--muted); font-size: 14px; }
+.form-card {
+  background: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 25px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.field { min-width: 0; }
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+input, select {
+  display: block;
+  width: 100%;
+  min-height: 47px;
+  border: 1px solid #d8d5e8;
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: white;
+  color: var(--dark);
+  font: inherit;
+}
+.help { color: var(--muted); font-size: 13px; margin: 5px 0 0; }
+button {
+  border: 0;
+  border-radius: 10px;
+  background: var(--purple);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 22px;
+  cursor: pointer;
+}
+button:hover { filter: brightness(.96); }
+button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 3px solid #b8afff;
+  outline-offset: 2px;
+}
+.actions { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+.secondary { background: white; color: var(--purple); border: 1px solid var(--purple); }
+#results { margin-top: 35px; }
+.result-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  margin: 14px 0;
+  background: white;
+}
+.result-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.score {
+  color: var(--purple);
+  font-size: 23px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.bar {
+  height: 9px;
+  background: #eeecf7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.bar span {
+  display: block;
+  height: 100%;
+  background: var(--purple);
+  border-radius: 10px;
+}
+.result-card p { margin-bottom: 5px; }
+.notice {
+  background: #fff9e9;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 14px;
+  color: #685322;
+  margin-top: 22px;
+}
+footer {
+  text-align: center;
+  padding: 25px 16px;
+  background: #f8f7fc;
+  color: var(--muted);
+  font-size: 13px;
+}
+footer a { color: var(--purple); }
+@media (max-width: 700px) {
+  .country-grid { grid-template-columns: 1fr; }
+  .country img { height: 210px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .form-card { padding: 18px; }
+  .hero { padding-top: 40px; }
+  .result-top { align-items: flex-start; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="logo" href="../">RetireAtlas</a>
+  <a class="home" href="../">Home</a>
+</header>
+
+<section class="hero">
+  <h1>Where Can You Retire Comfortably?</h1>
+  <p>
+    Discover retirement destinations that match your lifestyle,
+    priorities and plans for the future.
+  </p>
+</section>
+
+<main>
+  <h2 class="section-title">Explore Your Possibilities</h2>
+  <p class="intro">
+    Start with three destinations. Your preferences will help you
+    explore which places may suit your retirement lifestyle.
+  </p>
+
+  <div class="country-grid">
+    <article class="country">
+      <img
+        src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=80"
+        alt="Scenic streets and architecture in Portugal"
+        loading="lazy">
+      <div class="country-content">
+        <h3>🇵🇹 Portugal</h3>
+        <p>Atlantic coast, historic towns and a Mediterranean lifestyle.</p>
+      </div>
+    </article>
+
+    <article class="country">
+      <img
+        src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=80"
+        alt="City scenery in Thailand"
+        loading="lazy">
+      <div class="country-content">
+        <h3>🇹🇭 Thailand</h3>
+        <p>Tropical climate, vibrant culture and varied ways of living.</p>
+      </div>
+    </article>
+
+    <article class="country">
+      <img
+        src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80"
+        alt="Madrid cityscape in Spain"
+        loading="lazy">
+      <div class="country-content">
+        <h3>🇪🇸 Spain</h3>
+        <p>Mediterranean coastlines, historic cities and regional variety.</p>
+      </div>
+    </article>
+  </div>
+
+  <section class="form-card">
+    <h2 class="section-title">Your Retirement Profile</h2>
+    <p class="intro">
+      Tell us what matters most to you. Fields marked optional can be skipped.
+    </p>
+
+    <form id="retirementForm">
+      <div class="form-grid">
+        <div class="field">
+          <label for="budget">Monthly budget (EUR)</label>
+          <input id="budget" type="number" min="0" step="50"
+            placeholder="e.g. 2500">
+          <p class="help">Your total monthly retirement budget.</p>
+        </div>
+
+        <div class="field">
+          <label for="age">Planned retirement age</label>
+          <input id="age" type="number" min="18" max="100"
+            placeholder="e.g. 60">
+        </div>
+
+        <div class="field">
+          <label for="climate">Preferred climate</label>
+          <select id="climate">
+            <option value="any">Open to different climates</option>
+            <option value="warm">Warm and sunny</option>
+            <option value="four">Four seasons</option>
+            <option value="tropical">Hot and tropical</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="health">Importance of healthcare</label>
+          <select id="health">
+            <option value="high">Very important</option>
+            <option value="medium" selected>Important</option>
+            <option value="low">Less important</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="safety">Importance of safety</label>
+          <select id="safety">
+            <option value="high">Very important</option>
+            <option value="medium" selected>Important</option>
+            <option value="low">Less important</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="visa">Visa and residency priority</label>
+          <select id="visa">
+            <option value="high">Very important</option>
+            <option value="medium" selected>Important</option>
+            <option value="low">Less important</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="housing">Housing preference</label>
+          <select id="housing">
+            <option value="rent">Rent a home</option>
+            <option value="own">Buy a home</option>
+            <option value="either">Open to either</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="savings">Savings and investments (EUR, optional)</label>
+          <input id="savings" type="number" min="0" step="1000"
+            placeholder="e.g. 100000">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Explore My Destinations</button>
+        <button type="reset" class="secondary">Reset</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="results" aria-live="polite" hidden>
+    <h2>Your Initial Destination Matches</h2>
+    <p class="intro" id="resultIntro"></p>
+    <div id="resultList"></div>
+    <div class="notice">
+      <strong>Important:</strong> These are preliminary lifestyle-match
+      scores for exploration, not verified country rankings. This prototype
+      does not yet calculate local living costs, visa eligibility, tax,
+      healthcare access or investment returns. Rules and costs depend on
+      your nationality, city and personal circumstances. Verify details
+      with official sources before making decisions.
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>RetireAtlas</strong> — Plan your next chapter with confidence.</p>
+  <p>For educational planning only. Not legal, tax or financial advice.</p>
+  <p><a href="../">Return to RetireAtlas</a></p>
+</footer>
+
+<script>
+const destinations = [
+  {
+    name: "Portugal",
+    climate: ["warm", "four"],
+    climateText: "Mild coastal and Mediterranean-influenced climates, varying by region.",
+    note: "Consider regional housing costs, public services and the residence route available to your nationality.",
+    health: 3,
+    safety: 3,
+    visa: 2,
+    housing: 2
+  },
+  {
+    name: "Thailand",
+    climate: ["tropical", "warm"],
+    climateText: "Generally tropical, with hot, rainy and cooler seasons depending on region.",
+    note: "Consider private health insurance, local healthcare access and the current retirement-visa requirements.",
+    health: 2,
+    safety: 2,
+    visa: 2,
+    housing: 3
+  },
+  {
+    name: "Spain",
+    climate: ["warm", "four"],
+    climateText: "Climate varies from Mediterranean coastal areas to cooler inland and northern regions.",
+    note: "Consider regional housing costs, healthcare arrangements and the residence route available to your nationality.",
+    health: 3,
+    safety: 3,
+    visa: 2,
+    housing: 2
+  }
+];
+
+function preferenceWeight(value) {
+  if (value === "high") return 3;
+  if (value === "medium") return 2;
+  return 1;
+}
+
+document.getElementById("retirementForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const climate = document.getElementById("climate").value;
+  const health = preferenceWeight(document.getElementById("health").value);
+  const safety = preferenceWeight(document.getElementById("safety").value);
+  const visa = preferenceWeight(document.getElementById("visa").value);
+  const housing = document.getElementById("housing").value;
+  const budget = document.getElementById("budget").value;
+  const age = document.getElementById("age").value;
+  const savings = document.getElementById("savings").value;
+
+  const matches = destinations.map(place => {
+    let points = 0;
+    let possible = 0;
+    const reasons = [];
+
+    if (climate !== "any") {
+      possible += 3;
+      if (place.climate.includes(climate)) {
+        points += 3;
+        reasons.push("Your preferred climate matches this destination's broad climate profile.");
+      } else {
+        reasons.push("The climate may differ from your preference.");
+      }
+    }
+
+    possible += health + safety + visa;
+
+    points += (place.health / 3) * health;
+    points += (place.safety / 3) * safety;
+    points += (place.visa / 3) * visa;
+
+    if (housing === "either") {
+      points += 1;
+      possible += 1;
+      reasons.push("You are open to different housing arrangements.");
+    } else {
+      points += place.housing;
+      possible += 3;
+      reasons.push("Compare local rental or purchase prices before choosing a city.");
+    }
+
+    if (climate === "any") {
+      reasons.push("You are open to different climates.");
+    }
+
+    const score = possible > 0 ? Math.round((points / possible) * 100) : 0;
+
+    return {
+      ...place,
+      score,
+      reasons
+    };
+  });
+
+  matches.sort((a, b) => b.score - a.score);
+
+  document.getElementById("resultIntro").textContent =
+    "Your budget is " + (budget ? Number(budget).toLocaleString() + " EUR per month" : "not specified") +
+    (age ? "; planned retirement age: " + age : "") +
+    (savings ? "; savings entered: " + Number(savings).toLocaleString() + " EUR" : "") +
+    ". These scores reflect selected preferences only, not affordability or visa eligibility.";
+
+  document.getElementById("resultList").innerHTML = matches.map((place, index) => `
+    <article class="result-card">
+      <div class="result-top">
+        <h3>${index + 1}. ${place.name}</h3>
+        <div class="score">${place.score}/100</div>
+      </div>
+      <div class="bar" role="img" aria-label="Preference match score ${place.score} out of 100">
+        <span style="width:${place.score}%"></span>
+      </div>
+      <p><strong>Climate:</strong> ${place.climateText}</p>
+      <p><strong>What to investigate:</strong> ${place.note}</p>
+      <ul>${place.reasons.map(reason => `<li>${reason}</li>`).join("")}</ul>
+    </article>
+  `).join("");
+
+  const results = document.getElementById("results");
+  results.hidden = false;
+  results.scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+document.getElementById("retirementForm").addEventListener("reset", function() {
+  document.getElementById("results").hidden = true;
+});
+</script>
+</body>
+</html>
