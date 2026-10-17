@@ -37,7 +37,7 @@ main{max-width:1180px;margin:26px auto;padding:0 16px 40px}.hero{margin-bottom:2
 <div><label for="other">Other retirement income ($/month)</label><input id="other" type="number" min="0" max="1000000" step="25" value="0" required></div>
 </div></div>
 <div class="notice">Enter your Social Security estimate in today's dollars. You can check your personal estimate using the official Social Security Administration tools.</div>
-<div class="actions"><button class="primary" type="submit">Calculate my retirement</button><button class="secondary" type="button" id="reset">Reset</button></div><div id="error" class="error" role="alert" aria-live="polite"></div>
+ <div class="actions"><button class="primary" type="submit">Calculate my retirement</button><button class="secondary" type="button" id="reset" onclick="window.location.reload()">Reset</button></div><div id="error" class="error" role="alert" aria-live="polite"></div>
 </form></section>
 <section class="results" aria-live="polite" aria-label="Retirement results">
 <div class="card"><h2>Your estimate</h2><div class="summary-grid"><div class="metric primary-metric"><div class="label">Estimated savings at retirement</div><div class="value" id="futureValue">$623,785</div><div class="small">Future dollars</div></div><div class="metric"><div class="label">Total amount invested</div><div class="value" id="totalContrib">$230,000</div><div class="small">Starting savings + contributions</div></div><div class="metric"><div class="label">Value in today's dollars</div><div class="value" id="todayValue">$297,385</div><div class="small">Adjusted for inflation</div></div></div></div>
