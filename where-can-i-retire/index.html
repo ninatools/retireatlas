@@ -1,483 +1,489 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore retirement destinations around the world. Compare your lifestyle preferences and discover countries to consider for retirement.">
+<meta name="description" content="Explore retirement destinations in Portugal, Thailand and Spain. Discover cities, climate, national household spending data and healthcare resources.">
 <meta name="theme-color" content="#6d5ce7">
 <title>Where Can I Retire? | RetireAtlas</title>
-
 <style>
 :root {
-  --purple: #6d5ce7;
-  --dark: #24213a;
-  --muted: #6b7280;
-  --light: #f7f6ff;
-  --border: #e7e5f2;
+  --purple:#6d5ce7;
+  --dark:#24213a;
+  --muted:#6b7280;
+  --light:#f7f6ff;
+  --border:#e7e5f2;
+  --white:#ffffff;
 }
-* { box-sizing: border-box; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
-  background: #fff;
-  line-height: 1.6;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--dark);
+  background:#fff;
+  line-height:1.65;
+}
+a { color:var(--purple); }
+a:focus-visible,button:focus-visible {
+  outline:3px solid #b6adff;
+  outline-offset:3px;
 }
 header {
-  padding: 18px 20px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  background:var(--white);
+  border-bottom:1px solid var(--border);
+}
+.nav {
+  max-width:1120px;
+  margin:auto;
+  padding:18px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
 }
 .logo {
-  color: var(--purple);
-  font-size: 23px;
-  font-weight: 800;
-  text-decoration: none;
+  color:var(--dark);
+  font-size:22px;
+  font-weight:800;
+  text-decoration:none;
+  letter-spacing:-.5px;
 }
-.home {
-  color: var(--purple);
-  text-decoration: none;
-  font-weight: 700;
+.logo span { color:var(--purple); }
+.nav a:last-child {
+  text-decoration:none;
+  font-weight:700;
 }
 .hero {
-  text-align: center;
-  padding: 55px 20px 35px;
-  background: linear-gradient(180deg, #f2efff, #fff);
+  background:linear-gradient(135deg,#f5f2ff,#fff 65%,#f0edff);
+  padding:65px 22px 58px;
+  text-align:center;
 }
-.hero h1 {
-  font-size: clamp(30px, 5vw, 46px);
-  line-height: 1.2;
-  margin: 0 auto 16px;
-  max-width: 800px;
+.hero-inner { max-width:800px; margin:auto; }
+.eyebrow {
+  color:var(--purple);
+  text-transform:uppercase;
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:2px;
+}
+h1 {
+  font-size:clamp(34px,6vw,54px);
+  line-height:1.12;
+  letter-spacing:-1.5px;
+  margin:14px 0;
 }
 .hero p {
-  max-width: 680px;
-  margin: auto;
-  color: var(--muted);
-  font-size: 17px;
+  color:var(--muted);
+  font-size:18px;
+  max-width:680px;
+  margin:0 auto 25px;
+}
+.button {
+  display:inline-block;
+  background:var(--purple);
+  color:#fff;
+  border:0;
+  border-radius:10px;
+  padding:13px 21px;
+  text-decoration:none;
+  font-weight:700;
+  cursor:pointer;
 }
 main {
-  width: min(100% - 32px, 1050px);
-  margin: 30px auto 55px;
+  max-width:1120px;
+  margin:auto;
+  padding:35px 22px 65px;
 }
-.section-title { margin-bottom: 8px; }
-.intro { color: var(--muted); margin-top: 0; }
-.country-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  margin: 22px 0 42px;
+.section { margin:0 0 48px; }
+.section h2 {
+  font-size:clamp(25px,4vw,34px);
+  line-height:1.25;
+  margin:0 0 12px;
+  letter-spacing:-.5px;
+}
+.intro { color:var(--muted); max-width:780px; }
+.country-nav {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin:22px 0 0;
+}
+.country-nav a {
+  padding:9px 16px;
+  border:1px solid var(--border);
+  border-radius:999px;
+  background:white;
+  text-decoration:none;
+  font-weight:700;
 }
 .country {
-  overflow: hidden;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  background: white;
+  padding:30px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  margin-bottom:35px;
+  scroll-margin-top:20px;
 }
-.country img {
-  display: block;
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
+.country-heading {
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  margin-bottom:18px;
 }
-.country-content { padding: 15px; }
-.country h3 { margin: 0 0 5px; }
-.country p { margin: 0; color: var(--muted); font-size: 14px; }
-.form-card {
-  background: var(--light);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 25px;
+.flag {
+  font-size:35px;
+  line-height:1.2;
 }
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+.country h2 { margin:0; }
+.country-subtitle { color:var(--muted); margin:4px 0 0; }
+.stats {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+  margin:22px 0;
 }
-.field { min-width: 0; }
-label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 7px;
+.stat {
+  padding:18px;
+  background:var(--light);
+  border-radius:12px;
 }
-input, select {
-  display: block;
-  width: 100%;
-  min-height: 47px;
-  border: 1px solid #d8d5e8;
-  border-radius: 9px;
-  padding: 10px 12px;
-  background: white;
-  color: var(--dark);
-  font: inherit;
+.stat-label {
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+  font-weight:700;
 }
-.help { color: var(--muted); font-size: 13px; margin: 5px 0 0; }
-button {
-  border: 0;
-  border-radius: 10px;
-  background: var(--purple);
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 14px 22px;
-  cursor: pointer;
+.stat strong {
+  display:block;
+  font-size:clamp(20px,3vw,28px);
+  margin:5px 0;
 }
-button:hover { filter: brightness(.96); }
-button:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 3px solid #b8afff;
-  outline-offset: 2px;
+.stat small { color:var(--muted); }
+.note {
+  padding:15px 17px;
+  border-left:4px solid var(--purple);
+  background:#faf9ff;
+  border-radius:0 10px 10px 0;
+  font-size:14px;
 }
-.actions { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
-.secondary { background: white; color: var(--purple); border: 1px solid var(--purple); }
-#results { margin-top: 35px; }
-.result-card {
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 20px;
-  margin: 14px 0;
-  background: white;
+.country-info {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:18px;
+  margin:22px 0;
 }
-.result-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 12px;
+.info-box {
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:18px;
 }
-.score {
-  color: var(--purple);
-  font-size: 23px;
-  font-weight: 800;
-  white-space: nowrap;
+.info-box h3 { margin:0 0 8px; font-size:18px; }
+.info-box p { margin:0 0 10px; color:var(--muted); }
+.info-box a { font-weight:700; }
+.city-heading { margin:28px 0 14px; }
+.city-heading h3 { margin:0; font-size:22px; }
+.city-heading p { color:var(--muted); margin:4px 0; }
+.city-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
 }
-.bar {
-  height: 9px;
-  background: #eeecf7;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 10px 0;
+.city-card {
+  padding:19px;
+  border:1px solid var(--border);
+  border-radius:13px;
+  background:#fff;
 }
-.bar span {
-  display: block;
-  height: 100%;
-  background: var(--purple);
-  border-radius: 10px;
+.city-card h4 { margin:0 0 8px; font-size:19px; }
+.city-card p { margin:0 0 12px; color:#55566a; }
+.city-card a {
+  font-size:14px;
+  font-weight:700;
+  text-decoration:none;
 }
-.result-card p { margin-bottom: 5px; }
-.notice {
-  background: #fff9e9;
-  border-radius: 10px;
-  padding: 14px;
-  font-size: 14px;
-  color: #685322;
-  margin-top: 22px;
-}
+.city-card a:hover { text-decoration:underline; }
+.links { display:flex; flex-wrap:wrap; gap:12px; }
 footer {
-  text-align: center;
-  padding: 25px 16px;
-  background: #f8f7fc;
-  color: var(--muted);
-  font-size: 13px;
+  border-top:1px solid var(--border);
+  background:var(--light);
+  padding:30px 22px;
+  text-align:center;
+  color:var(--muted);
+  font-size:14px;
 }
-footer a { color: var(--purple); }
-@media (max-width: 700px) {
-  .country-grid { grid-template-columns: 1fr; }
-  .country img { height: 210px; }
-  .form-grid { grid-template-columns: 1fr; }
-  .form-card { padding: 18px; }
-  .hero { padding-top: 40px; }
-  .result-top { align-items: flex-start; }
+footer a { font-weight:700; }
+@media(max-width:650px) {
+  .hero { padding:48px 19px; }
+  main { padding:28px 16px 45px; }
+  .country { padding:19px; }
+  .stats,.country-info,.city-grid { grid-template-columns:1fr; }
+  .nav { padding:15px 17px; }
+  .logo { font-size:20px; }
 }
 </style>
 </head>
-
 <body>
 <header>
-  <a class="logo" href="../">RetireAtlas</a>
-  <a class="home" href="../">Home</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a class="logo" href="#top">Retire<span>Atlas</span></a>
+    <a href="#destinations">Explore countries ↓</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <h1>Where Can You Retire Comfortably?</h1>
-  <p>
-    Discover retirement destinations that match your lifestyle,
-    priorities and plans for the future.
-  </p>
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="eyebrow">Your retirement journey starts here</div>
+    <h1>Where Can I Retire?</h1>
+    <p>Explore Portugal, Thailand and Spain. Discover cities, climate, national spending information and healthcare resources to help you plan your next chapter.</p>
+    <a class="button" href="#destinations">Explore destinations</a>
+  </div>
 </section>
 
 <main>
-  <h2 class="section-title">Explore Your Possibilities</h2>
-  <p class="intro">
-    Start with three destinations. Your preferences will help you
-    explore which places may suit your retirement lifestyle.
-  </p>
+<section class="section" id="destinations">
+  <h2>Explore three retirement destinations</h2>
+  <p class="intro">Every country offers a different lifestyle. Start with an overview, explore five example cities in each country, and use the official resources to research your own needs.</p>
+  <div class="country-nav">
+    <a href="#portugal">🇵🇹 Portugal</a>
+    <a href="#thailand">🇹🇭 Thailand</a>
+    <a href="#spain">🇪🇸 Spain</a>
+  </div>
+</section>
 
-  <div class="country-grid">
-    <article class="country">
-      <img
-        src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=900&q=80"
-        alt="Scenic streets and architecture in Portugal"
-        loading="lazy">
-      <div class="country-content">
-        <h3>🇵🇹 Portugal</h3>
-        <p>Atlantic coast, historic towns and a Mediterranean lifestyle.</p>
+<section class="country" id="portugal">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇵🇹</div>
+    <div>
+      <h2>Portugal</h2>
+      <p class="country-subtitle">Atlantic coastline, historic towns and varied regional climates.</p>
+    </div>
+  </div>
+  <p>Portugal offers coastal communities, larger cities and quieter inland areas. The Algarve is known for its sunny climate, while northern Portugal generally has cooler, wetter winters.</p>
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-label">Average household expenditure</span>
+      <strong>€23,900/year</strong>
+      <small>Portugal · 2022/23 survey</small>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Approximate monthly equivalent</span>
+      <strong>€1,992/month</strong>
+      <small>Annual figure divided by 12</small>
+    </div>
+  </div>
+  <div class="note">This is a national household average, not a recommended retirement budget or an estimate for one person. Housing, household size and location can make a substantial difference.</div>
+  <div class="country-info">
+    <div class="info-box">
+      <h3>☀️ Climate</h3>
+      <p>Southern areas are generally warmer and drier. The north is usually wetter, and inland temperatures can vary considerably by season.</p>
+      <a href="https://www.ipma.pt/pt/oclima/normais.clima/" target="_blank" rel="noopener">Official climate data ↗</a>
+    </div>
+    <div class="info-box">
+      <h3>🏥 Healthcare</h3>
+      <p>Explore Portugal's public health service and check eligibility, local services and private options before making plans.</p>
+      <div class="links">
+        <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">SNS public health ↗</a>
+        <a href="https://www.ers.pt/" target="_blank" rel="noopener">Health regulator ↗</a>
       </div>
+    </div>
+  </div>
+  <div class="city-heading">
+    <h3>Five cities and towns to explore</h3>
+    <p>Examples to research, not a ranking.</p>
+  </div>
+  <div class="city-grid">
+    <article class="city-card">
+      <h4>Tavira</h4>
+      <p>A historic Algarve town with traditional architecture, nearby beaches and a relaxed pace of life. Summer can be hot.</p>
+      <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
-
-    <article class="country">
-      <img
-        src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?auto=format&fit=crop&w=900&q=80"
-        alt="City scenery in Thailand"
-        loading="lazy">
-      <div class="country-content">
-        <h3>🇹🇭 Thailand</h3>
-        <p>Tropical climate, vibrant culture and varied ways of living.</p>
-      </div>
+    <article class="city-card">
+      <h4>Funchal</h4>
+      <p>The main city of Madeira, with a mild maritime climate, hillside scenery and access to island walking routes.</p>
+      <a href="https://www.sesaram.pt/" target="_blank" rel="noopener">Madeira health service ↗</a>
     </article>
-
-    <article class="country">
-      <img
-        src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=900&q=80"
-        alt="Madrid cityscape in Spain"
-        loading="lazy">
-      <div class="country-content">
-        <h3>🇪🇸 Spain</h3>
-        <p>Mediterranean coastlines, historic cities and regional variety.</p>
-      </div>
+    <article class="city-card">
+      <h4>Braga</h4>
+      <p>A northern city with historic sites, green spaces and university life. Expect wetter winters than in the Algarve.</p>
+      <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Lisbon</h4>
+      <p>The capital has extensive transport, cultural activities and services, but housing costs can be a major consideration.</p>
+      <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Coimbra</h4>
+      <p>A university city known for its historic centre and educational and medical institutions. Summers can be hot.</p>
+      <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
   </div>
+</section>
 
-  <section class="form-card">
-    <h2 class="section-title">Your Retirement Profile</h2>
-    <p class="intro">
-      Tell us what matters most to you. Fields marked optional can be skipped.
-    </p>
-
-    <form id="retirementForm">
-      <div class="form-grid">
-        <div class="field">
-          <label for="budget">Monthly budget (EUR)</label>
-          <input id="budget" type="number" min="0" step="50"
-            placeholder="e.g. 2500">
-          <p class="help">Your total monthly retirement budget.</p>
-        </div>
-
-        <div class="field">
-          <label for="age">Planned retirement age</label>
-          <input id="age" type="number" min="18" max="100"
-            placeholder="e.g. 60">
-        </div>
-
-        <div class="field">
-          <label for="climate">Preferred climate</label>
-          <select id="climate">
-            <option value="any">Open to different climates</option>
-            <option value="warm">Warm and sunny</option>
-            <option value="four">Four seasons</option>
-            <option value="tropical">Hot and tropical</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="health">Importance of healthcare</label>
-          <select id="health">
-            <option value="high">Very important</option>
-            <option value="medium" selected>Important</option>
-            <option value="low">Less important</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="safety">Importance of safety</label>
-          <select id="safety">
-            <option value="high">Very important</option>
-            <option value="medium" selected>Important</option>
-            <option value="low">Less important</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="visa">Visa and residency priority</label>
-          <select id="visa">
-            <option value="high">Very important</option>
-            <option value="medium" selected>Important</option>
-            <option value="low">Less important</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="housing">Housing preference</label>
-          <select id="housing">
-            <option value="rent">Rent a home</option>
-            <option value="own">Buy a home</option>
-            <option value="either">Open to either</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="savings">Savings and investments (EUR, optional)</label>
-          <input id="savings" type="number" min="0" step="1000"
-            placeholder="e.g. 100000">
-        </div>
-      </div>
-
-      <div class="actions">
-        <button type="submit">Explore My Destinations</button>
-        <button type="reset" class="secondary">Reset</button>
-      </div>
-    </form>
-  </section>
-
-  <section id="results" aria-live="polite" hidden>
-    <h2>Your Initial Destination Matches</h2>
-    <p class="intro" id="resultIntro"></p>
-    <div id="resultList"></div>
-    <div class="notice">
-      <strong>Important:</strong> These are preliminary lifestyle-match
-      scores for exploration, not verified country rankings. This prototype
-      does not yet calculate local living costs, visa eligibility, tax,
-      healthcare access or investment returns. Rules and costs depend on
-      your nationality, city and personal circumstances. Verify details
-      with official sources before making decisions.
+<section class="country" id="thailand">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇹🇭</div>
+    <div>
+      <h2>Thailand</h2>
+      <p class="country-subtitle">Tropical landscapes, regional food cultures and major urban centres.</p>
     </div>
-  </section>
+  </div>
+  <p>Thailand has a tropical climate, with regional differences between the north, central plains and southern coasts. Healthcare access, insurance and visa eligibility should be checked for your circumstances.</p>
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-label">Average household expenditure</span>
+      <strong>฿22,420/month</strong>
+      <small>Thailand · NSO 2025 figure</small>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Approximate annual equivalent</span>
+      <strong>฿269,040/year</strong>
+      <small>Monthly figure multiplied by 12</small>
+    </div>
+  </div>
+  <div class="note">This is average household expenditure, not an individual retirement budget. Costs vary by region, housing, household size and lifestyle.</div>
+  <div class="country-info">
+    <div class="info-box">
+      <h3>🌦️ Climate</h3>
+      <p>Hot weather occurs throughout much of the year. Rainfall and seasonal air quality differ by region; northern cities can experience seasonal haze.</p>
+      <a href="https://www.tmd.go.th/en" target="_blank" rel="noopener">Thai Meteorological Department ↗</a>
+    </div>
+    <div class="info-box">
+      <h3>🏥 Healthcare</h3>
+      <p>Compare public and private facilities, insurance requirements, treatment costs and language support.</p>
+      <div class="links">
+        <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Ministry of Public Health ↗</a>
+        <a href="https://www.hss.moph.go.th/" target="_blank" rel="noopener">Health Service Support ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="city-heading">
+    <h3>Five cities to explore</h3>
+    <p>Examples to research, not a ranking.</p>
+  </div>
+  <div class="city-grid">
+    <article class="city-card">
+      <h4>Chiang Mai</h4>
+      <p>A northern city with mountain scenery, temples, markets and a large international community. Seasonal air pollution deserves attention.</p>
+      <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Bangkok</h4>
+      <p>A large metropolitan centre with extensive transport, shopping and specialist medical services. Traffic and heat may affect daily comfort.</p>
+      <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Hua Hin</h4>
+      <p>A coastal town with beaches, markets and residential neighbourhoods popular with both local residents and international visitors.</p>
+      <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Phuket</h4>
+      <p>An island province with beaches, international services and a tropical climate. Island location and seasonal tourism can affect costs.</p>
+      <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Pattaya</h4>
+      <p>A coastal urban area with shopping, transport links and many services. Research neighbourhood noise, traffic and the healthcare facility you may need.</p>
+      <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
+    </article>
+  </div>
+</section>
+
+<section class="country" id="spain">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇪🇸</div>
+    <div>
+      <h2>Spain</h2>
+      <p class="country-subtitle">Mediterranean coastlines, historic cities and diverse regional lifestyles.</p>
+    </div>
+  </div>
+  <p>Spain combines large metropolitan areas, coastal communities and inland historic cities. Climate, housing and access to healthcare vary by region. Check residency and healthcare eligibility before deciding to move.</p>
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-label">Average household expenditure</span>
+      <strong>€35,101/year</strong>
+      <small>Spain · INE 2025 figure</small>
+    </div>
+    <div class="stat">
+      <span class="stat-label">Approximate monthly equivalent</span>
+      <strong>€2,925/month</strong>
+      <small>Annual figure divided by 12</small>
+    </div>
+  </div>
+  <div class="note">Spain's published household expenditure measure includes imputed rent for some owner-occupied or provided accommodation. This means the figure is not directly comparable with the Portugal or Thailand figures shown above.</div>
+  <div class="country-info">
+    <div class="info-box">
+      <h3>☀️ Climate</h3>
+      <p>Mediterranean coastal areas often have mild winters and hot summers. Inland and southern cities can experience intense summer heat.</p>
+      <a href="https://www.aemet.es/en/serviciosclimaticos/datosclimatologicos/valoresclimatologicos" target="_blank" rel="noopener">Official climate data ↗</a>
+    </div>
+    <div class="info-box">
+      <h3>🏥 Healthcare</h3>
+      <p>Spain has regional public health services. Eligibility and registration requirements depend on personal circumstances and residency status.</p>
+      <div class="links">
+        <a href="https://www.sanidad.gob.es/en/" target="_blank" rel="noopener">Health ministry ↗</a>
+        <a href="https://administracion.gob.es/" target="_blank" rel="noopener">Government services ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="city-heading">
+    <h3>Five cities to explore</h3>
+    <p>Examples to research, not a ranking.</p>
+  </div>
+  <div class="city-grid">
+    <article class="city-card">
+      <h4>Valencia</h4>
+      <p>A Mediterranean city with beaches, parks, public transport and a mix of urban and outdoor activities.</p>
+      <a href="https://www.san.gva.es/" target="_blank" rel="noopener">Valencian health service ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Málaga</h4>
+      <p>A southern coastal city with a historic centre, cultural attractions and generally mild winters. Summers can be hot.</p>
+      <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Granada</h4>
+      <p>A historic inland city near the Sierra Nevada. Seasonal temperature differences are greater than on the coast.</p>
+      <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Alicante</h4>
+      <p>A coastal city with beaches, an established urban centre and access to the wider Costa Blanca region.</p>
+      <a href="https://www.san.gva.es/" target="_blank" rel="noopener">Valencian health service ↗</a>
+    </article>
+    <article class="city-card">
+      <h4>Seville</h4>
+      <p>A lively historic city with cultural attractions and warm winters. Summer heat can be particularly intense.</p>
+      <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <h2>How to compare destinations</h2>
+  <p class="intro">Before choosing a place, consider your actual monthly budget, housing, healthcare eligibility, insurance, climate preferences, transport, safety, visa rules and tax position. Visit during different seasons if possible.</p>
+  <div class="note">
+    <strong>Important:</strong> This page provides general information for early research. It does not rank countries, provide immigration or tax advice, or guarantee healthcare access. Confirm current details with official authorities before making a decision.
+  </div>
+</section>
+
+<section class="section">
+  <h2>Sources and data notes</h2>
+  <ul>
+    <li>Portugal: Statistics Portugal (INE), Household Budget Survey 2022/2023. <a href="https://www.ine.pt/ine_novidades/semin/INEWS64/index.html" target="_blank" rel="noopener">Official publication ↗</a></li>
+    <li>Thailand: National Statistical Office. <a href="https://www.nso.go.th/nsoweb/index?set_lang=en" target="_blank" rel="noopener">Official statistics portal ↗</a></li>
+    <li>Spain: National Statistics Institute (INE), Household Budget Survey 2025. <a href="https://www.ine.es/en/prensa/epf_prensa_en.htm" target="_blank" rel="noopener">Official publication ↗</a></li>
+  </ul>
+  <p class="intro">The source figures refer to different survey periods and measurement methods. They should not be treated as a like-for-like country cost comparison. Figures may be revised by the relevant statistical authorities.</p>
+</section>
 </main>
 
 <footer>
-  <p><strong>RetireAtlas</strong> — Plan your next chapter with confidence.</p>
-  <p>For educational planning only. Not legal, tax or financial advice.</p>
-  <p><a href="../">Return to RetireAtlas</a></p>
+  <p><strong>RetireAtlas</strong> · Explore your retirement possibilities</p>
+  <p>Research carefully. Plan confidently.</p>
+  <p><a href="#top">Back to top ↑</a></p>
 </footer>
-
-<script>
-const destinations = [
-  {
-    name: "Portugal",
-    climate: ["warm", "four"],
-    climateText: "Mild coastal and Mediterranean-influenced climates, varying by region.",
-    note: "Consider regional housing costs, public services and the residence route available to your nationality.",
-    health: 3,
-    safety: 3,
-    visa: 2,
-    housing: 2
-  },
-  {
-    name: "Thailand",
-    climate: ["tropical", "warm"],
-    climateText: "Generally tropical, with hot, rainy and cooler seasons depending on region.",
-    note: "Consider private health insurance, local healthcare access and the current retirement-visa requirements.",
-    health: 2,
-    safety: 2,
-    visa: 2,
-    housing: 3
-  },
-  {
-    name: "Spain",
-    climate: ["warm", "four"],
-    climateText: "Climate varies from Mediterranean coastal areas to cooler inland and northern regions.",
-    note: "Consider regional housing costs, healthcare arrangements and the residence route available to your nationality.",
-    health: 3,
-    safety: 3,
-    visa: 2,
-    housing: 2
-  }
-];
-
-function preferenceWeight(value) {
-  if (value === "high") return 3;
-  if (value === "medium") return 2;
-  return 1;
-}
-
-document.getElementById("retirementForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const climate = document.getElementById("climate").value;
-  const health = preferenceWeight(document.getElementById("health").value);
-  const safety = preferenceWeight(document.getElementById("safety").value);
-  const visa = preferenceWeight(document.getElementById("visa").value);
-  const housing = document.getElementById("housing").value;
-  const budget = document.getElementById("budget").value;
-  const age = document.getElementById("age").value;
-  const savings = document.getElementById("savings").value;
-
-  const matches = destinations.map(place => {
-    let points = 0;
-    let possible = 0;
-    const reasons = [];
-
-    if (climate !== "any") {
-      possible += 3;
-      if (place.climate.includes(climate)) {
-        points += 3;
-        reasons.push("Your preferred climate matches this destination's broad climate profile.");
-      } else {
-        reasons.push("The climate may differ from your preference.");
-      }
-    }
-
-    possible += health + safety + visa;
-
-    points += (place.health / 3) * health;
-    points += (place.safety / 3) * safety;
-    points += (place.visa / 3) * visa;
-
-    if (housing === "either") {
-      points += 1;
-      possible += 1;
-      reasons.push("You are open to different housing arrangements.");
-    } else {
-      points += place.housing;
-      possible += 3;
-      reasons.push("Compare local rental or purchase prices before choosing a city.");
-    }
-
-    if (climate === "any") {
-      reasons.push("You are open to different climates.");
-    }
-
-    const score = possible > 0 ? Math.round((points / possible) * 100) : 0;
-
-    return {
-      ...place,
-      score,
-      reasons
-    };
-  });
-
-  matches.sort((a, b) => b.score - a.score);
-
-  document.getElementById("resultIntro").textContent =
-    "Your budget is " + (budget ? Number(budget).toLocaleString() + " EUR per month" : "not specified") +
-    (age ? "; planned retirement age: " + age : "") +
-    (savings ? "; savings entered: " + Number(savings).toLocaleString() + " EUR" : "") +
-    ". These scores reflect selected preferences only, not affordability or visa eligibility.";
-
-  document.getElementById("resultList").innerHTML = matches.map((place, index) => `
-    <article class="result-card">
-      <div class="result-top">
-        <h3>${index + 1}. ${place.name}</h3>
-        <div class="score">${place.score}/100</div>
-      </div>
-      <div class="bar" role="img" aria-label="Preference match score ${place.score} out of 100">
-        <span style="width:${place.score}%"></span>
-      </div>
-      <p><strong>Climate:</strong> ${place.climateText}</p>
-      <p><strong>What to investigate:</strong> ${place.note}</p>
-      <ul>${place.reasons.map(reason => `<li>${reason}</li>`).join("")}</ul>
-    </article>
-  `).join("");
-
-  const results = document.getElementById("results");
-  results.hidden = false;
-  results.scrollIntoView({ behavior: "smooth", block: "start" });
-});
-
-document.getElementById("retirementForm").addEventListener("reset", function() {
-  document.getElementById("results").hidden = true;
-});
-</script>
 </body>
 </html>
