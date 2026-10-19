@@ -9,7 +9,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Section | Photographer / attribution | License | Source |
 |---|---|---|---|
 | Portugal | Ned Dwyer | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Algarve coast of Portugal](https://commons.wikimedia.org/wiki/File:Algarve_coast_of_Portugal.jpg) |
-| Thailand | Mathias Krumbholz | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Bangkok Skyline (MK)](https://commons.wikimedia.org/wiki/File:Bangkok_Skyline_(MK).jpg) |
+| Thailand | Azreey | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Bangkok - City skyline at mid day](https://commons.wikimedia.org/wiki/File:Bangkok_-_City_skyline_at_mid_day.JPG) |
 | Spain | Gica-cobra | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Plaza de España de Sevilla](https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg) |
 
 ## Portugal city photographs
@@ -26,11 +26,11 @@ Please retain attribution and the license link when reusing any image. For CC BY
 
 | City | Photographer / attribution | License | Source |
 |---|---|---|---|
-| Chiang Mai | Pratyeka | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Chiang Mai Panorama from Doi Suthep Lookout](https://commons.wikimedia.org/wiki/File:Chiang_Mai_Panorama_from_Doi_Suthep_Lookout_(2014-08-08).jpg) |
+| Chiang Mai | Jonathan.Gab. | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Chiang Mai View from Doi Suthep](https://commons.wikimedia.org/wiki/File:Chiang_Mai_View_from_Doi_Suthep.jpg) |
 | Bangkok | Tournasol7 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wat Arun in Bangkok](https://commons.wikimedia.org/wiki/File:Wat_Arun_in_Bangkok_(1).jpg) |
 | Hua Hin | Elmschrat | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Hua Hin Beach](https://commons.wikimedia.org/wiki/File:01_Hua_Hin_Beach.jpg) |
 | Phuket | Mussi Katz | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Phuket old town](https://commons.wikimedia.org/wiki/File:Phuket_old_town_(52549766215).jpg) |
-| Pattaya | Vyacheslav Argenberg | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Pattaya Bay and Beach](https://commons.wikimedia.org/wiki/File:Pattaya_Bay,_Pattaya_Beach,_Thailand.jpg) |
+| Pattaya | PattayaPatrol | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Pattaya beachfront promenade and skyline](https://commons.wikimedia.org/wiki/File:DFC_5497_Strolling_along_Pattaya_Beach_as_palms_frame_the_skyline_and_the_PATTAYA_sign_on_the_distant_hill.jpg) |
 
 ## Spain city photographs
 
