@@ -9,7 +9,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Section | Photographer / attribution | License | Source |
 |---|---|---|---|
 | Portugal | Ned Dwyer | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Algarve coast of Portugal](https://commons.wikimedia.org/wiki/File:Algarve_coast_of_Portugal.jpg) |
-| Thailand | Stéphane Bidouze | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Phang Nga Bay aerial view](https://commons.wikimedia.org/wiki/File:Pang_Nga_bay.jpg) |
+| Thailand | Preecha.MJ | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Royal Palace and City Skyline Bangkok at Thailand](https://commons.wikimedia.org/wiki/File:Royal_Palace_and_City_Skyline_Bangkok_at_Thailand.jpg) |
 | Spain | Gica-cobra | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Plaza de España de Sevilla](https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg) |
 
 ## Portugal city photographs
