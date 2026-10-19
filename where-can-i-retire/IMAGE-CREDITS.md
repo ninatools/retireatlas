@@ -9,8 +9,8 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Section | Photographer / attribution | License | Source |
 |---|---|---|---|
 | Portugal | Ned Dwyer | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Algarve coast of Portugal](https://commons.wikimedia.org/wiki/File:Algarve_coast_of_Portugal.jpg) |
-| Thailand | Vyacheslav Argenberg | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Khlong Phanom karst landscape](https://commons.wikimedia.org/wiki/File:Khlong_Phanom,_Karst_landscape,_Surat_Thani,_Thailand.jpg) |
-| Spain | Joxemai | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Spain landscape 0003](https://commons.wikimedia.org/wiki/File:Spain_landscape_0003.jpg) |
+| Thailand | Stéphane Bidouze | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Phang Nga Bay aerial view](https://commons.wikimedia.org/wiki/File:Pang_Nga_bay.jpg) |
+| Spain | Gica-cobra | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Plaza de España de Sevilla](https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg) |
 
 ## Portugal city photographs
 
@@ -19,7 +19,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Tavira | Vitor Oliveira | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Tavira - Portugal](https://commons.wikimedia.org/wiki/File:Tavira_-_Portugal_(33540319901).jpg) |
 | Funchal | Koshelyev | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Panoramic View of Funchal](https://commons.wikimedia.org/wiki/File:Panoramic_View_of_Funchal_from_Madeira_Botanical_Garden.jpg) |
 | Braga | Otto Domes | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Braga Panorama](https://commons.wikimedia.org/wiki/File:Braga_Panorama.jpg) |
-| Lisbon | Tiago Almeida | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Panorama of Lisbon](https://commons.wikimedia.org/wiki/File:Panorama_of_Lisbon.jpg) |
+| Lisbon | Neil | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Tram through Alfama](https://commons.wikimedia.org/wiki/File:Tram_through_Alfama_(45633482212).jpg) |
 | Coimbra | Carlos Luis M C da Cruz | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Coimbra panoramica](https://commons.wikimedia.org/wiki/File:Coimbra_panoramica.JPG) |
 
 ## Thailand city photographs
@@ -27,7 +27,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | City | Photographer / attribution | License | Source |
 |---|---|---|---|
 | Chiang Mai | Supanut Arunoprayote | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Panoramic view of Chiang Mai City](https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Chiang_Mai_City.jpg) |
-| Bangkok | Vyacheslav Argenberg | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Bangkok skyline and BTS Skytrain](https://commons.wikimedia.org/wiki/File:Bangkok_skyline,_BTS_Skytrain,_Bangkok,_Thailand.jpg) |
+| Bangkok | Tournasol7 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wat Arun in Bangkok](https://commons.wikimedia.org/wiki/File:Wat_Arun_in_Bangkok_(1).jpg) |
 | Hua Hin | Elmschrat | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Hua Hin Beach](https://commons.wikimedia.org/wiki/File:01_Hua_Hin_Beach.jpg) |
 | Phuket | Mussi Katz | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Phuket old town](https://commons.wikimedia.org/wiki/File:Phuket_old_town_(52549766215).jpg) |
 | Pattaya | Vyacheslav Argenberg | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Pattaya Bay and Beach](https://commons.wikimedia.org/wiki/File:Pattaya_Bay,_Pattaya_Beach,_Thailand.jpg) |
