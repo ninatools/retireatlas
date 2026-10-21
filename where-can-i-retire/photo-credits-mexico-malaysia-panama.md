@@ -8,11 +8,11 @@ These photographs are linked from Wikimedia Commons using its Special:FilePath s
 
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
-| Country overview | Mexico City Panorama.jpg | Schmachtin | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mexico_City_Panorama.jpg |
+| Country overview | Mexico City Skyline.jpg | Leandro's World Tour | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Mexico_City_Skyline.jpg |
 | Mérida | Merida (Mexiko).jpg | Dino Mueller (dino1948) | CC BY-SA 3.0 (also GFDL listed) | https://commons.wikimedia.org/wiki/File:Merida_(Mexiko).jpg |
 | San Miguel de Allende | Parroquia de San Miguel Allende.jpg | Luna Guadalupe | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Parroquia_de_San_Miguel_Allende.jpg |
-| Puerto Vallarta | Puerto Vallarta, Jalisco, 2025 - 115.jpg | Another Believer | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Puerto_Vallarta,_Jalisco,_2025_-_115.jpg |
-| Ajijic and Lake Chapala | Ajijic.jpg | Jaec | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Ajijic.jpg |
+| Puerto Vallarta | Malecón de Puerto Vallarta.jpg | Sailverz | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Malec%C3%B3n_de_Puerto_Vallarta.jpg |
+| Ajijic and Lake Chapala | Lago de Chapala en Ajijic.jpg | YdelaT | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Lago_de_Chapala_en_Ajijic.jpg |
 | Mexico City | Palacio de Bellas Artes, Mexico City, MX.jpg | Timothy Neesam | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Mexico_City,_MX.jpg |
 
 ## Malaysia
