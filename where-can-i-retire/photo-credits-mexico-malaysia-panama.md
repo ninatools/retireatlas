@@ -20,18 +20,18 @@ These photographs are linked from Wikimedia Commons using its Special:FilePath s
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
 | Country overview | Kuala Lumpur Cityscape.jpg | Saad Abdullah | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_Cityscape.jpg |
-| Penang and George Town | George Town, Penang, Malaysia.jpg | cat_collector | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:George_Town,_Penang,_Malaysia.jpg |
+| Penang and George Town | Penang shophouses, Magazine Road, George Town.jpg | Vnonymous | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Penang_shophouses,_Magazine_Road,_George_Town.jpg |
 | Kuala Lumpur | Petronas twin towers.jpg | Honzasoukup | CC BY 3.0 (GFDL also listed) | https://commons.wikimedia.org/wiki/File:Petronas_twin_towers.jpg |
 | Ipoh | Ipoh.jpg | Adiyon84 | Public domain dedication by author | https://commons.wikimedia.org/wiki/File:Ipoh.jpg |
 | Melaka | Melaka-Dutch-Square-2164.jpg | Vmenkov | CC BY-SA 3.0 (other older CC BY-SA/GFDL terms also listed) | https://commons.wikimedia.org/wiki/File:Melaka-Dutch-Square-2164.jpg |
-| Kota Kinabalu | Kota Kinabalu - Borneo.jpg | Gossipguy | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kota_Kinabalu_-_Borneo.jpg |
+| Kota Kinabalu | Kota Kinabalu Sunset.jpg | Kevin85Sam | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kota_Kinabalu_Sunset.jpg |
 
 ## Panama
 
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
 | Country overview | Panama Skyline.jpg | Nico2panama | CC BY-SA 3.0 (older CC BY-SA/GFDL terms also listed) | https://commons.wikimedia.org/wiki/File:Panama_Skyline.jpg |
-| Panama City | Panama City skyline.jpg | JurriaanH | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Panama_City_skyline.jpg |
+| Panama City | Casco viejo panama.jpg | Editorpana | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Casco_viejo_panama.jpg |
 | Boquete | Boquete, Panama.jpg | Michael (moik) McCullough | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Boquete,_Panama.jpg |
 | David | David-Panama.jpg | Moto-gundy | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:David-Panama.jpg |
 | Coronado | Coronado Beach.JPG | Myukie | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Coronado_Beach.JPG |
