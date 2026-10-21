@@ -8,13 +8,12 @@ These photographs are linked from Wikimedia Commons using its Special:FilePath s
 
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
-| Country overview | Mexico City Skyline.jpg | Leandro's World Tour | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Mexico_City_Skyline.jpg |
-| Mérida | Merida (Mexiko).jpg | Dino Mueller (dino1948) | CC BY-SA 3.0 (also GFDL listed) | https://commons.wikimedia.org/wiki/File:Merida_(Mexiko).jpg |
-| San Miguel de Allende | Parroquia de San Miguel Allende.jpg | Luna Guadalupe | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Parroquia_de_San_Miguel_Allende.jpg |
-| Puerto Vallarta | Malecón de Puerto Vallarta.jpg | Sailverz | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Malec%C3%B3n_de_Puerto_Vallarta.jpg |
-| Ajijic and Lake Chapala | Lago de Chapala en Ajijic.jpg | YdelaT | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Lago_de_Chapala_en_Ajijic.jpg |
+| Country overview | Mexico City Reforma skyline.jpg | Jonathan Salvador | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mexico_City_Reforma_skyline.jpg |
+| Mérida | Catedral de Mérida, Yucatán.jpg | EduardoMendoza | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Catedral_de_M%C3%A9rida,_Yucat%C3%A1n.jpg |
+| San Miguel de Allende | Parroquia San Miguel de Allende.jpg | Janiecortes | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Parroquia_San_Miguel_de_Allende.jpg |
+| Puerto Vallarta | Malecón, Puerto Vallarta.jpg | Zath_312 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Malec%C3%B3n,_Puerto_Vallarta.jpg |
+| Ajijic and Lake Chapala | Ajijic Panorama.jpg | SimonVelazquez | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Ajijic_Panorama.jpg |
 | Mexico City | Palacio de Bellas Artes, Mexico City, MX.jpg | Timothy Neesam | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Mexico_City,_MX.jpg |
-
 ## Malaysia
 
 | Use | Photograph | Author | License | Source |
