@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Explore retirement destinations in Portugal, Thailand and Spain. Discover cities, climate, national household spending data and healthcare resources.">
+<meta name="description" content="Explore six retirement destinations across Europe, Asia and Latin America. Compare city lifestyles, climate, healthcare resources and national spending context.">
 <meta name="theme-color" content="#6d5ce7">
 <title>Where Can I Retire? | RetireAtlas</title>
 <style>
@@ -118,6 +118,34 @@ main {
   text-decoration:none;
   font-weight:700;
 }
+.index-table-wrap {
+  overflow-x:auto;
+  margin:20px 0 12px;
+  border:1px solid var(--border);
+  border-radius:12px;
+  -webkit-overflow-scrolling:touch;
+}
+.index-table {
+  width:100%;
+  min-width:650px;
+  border-collapse:collapse;
+  text-align:left;
+  font-size:15px;
+}
+.index-table th,
+.index-table td {
+  padding:12px 14px;
+  border-bottom:1px solid var(--border);
+}
+.index-table th {
+  background:var(--light);
+  font-size:13px;
+  line-height:1.4;
+}
+.index-table tbody tr:last-child td { border-bottom:0; }
+.index-table td:not(:first-child),
+.index-table th:not(:first-child) { text-align:right; font-variant-numeric:tabular-nums; }
+.index-note { color:var(--muted); font-size:14px; }
 .country {
   padding:30px;
   border:1px solid var(--border);
@@ -258,19 +286,22 @@ footer a { font-weight:700; }
   <div class="hero-inner">
     <div class="eyebrow">Your retirement journey starts here</div>
     <h1>Where Can I Retire?</h1>
-    <p>Explore Portugal, Thailand and Spain. Discover cities, climate, national spending information and healthcare resources to help you plan your next chapter.</p>
+    <p>Explore six countries with different climates, cultures and ways of life. Compare example cities, consider healthcare and practical needs, and use the linked resources to guide your own research.</p>
     <a class="button" href="#destinations">Explore destinations</a>
   </div>
 </section>
 
 <main>
 <section class="section" id="destinations">
-  <h2>Explore three retirement destinations</h2>
-  <p class="intro">Every country offers a different lifestyle. Start with an overview, explore five example cities in each country, and use the official resources to research your own needs.</p>
+  <h2>Explore six retirement destinations</h2>
+  <p class="intro">Every country offers a different mix of climate, pace of life, urban services and regional character. Explore five example cities in each destination. These are starting points for research, not a ranking or a guarantee that a place will suit every retiree.</p>
   <div class="country-nav">
     <a href="#portugal">🇵🇹 Portugal</a>
     <a href="#thailand">🇹🇭 Thailand</a>
     <a href="#spain">🇪🇸 Spain</a>
+    <a href="#mexico">🇲🇽 Mexico</a>
+    <a href="#malaysia">🇲🇾 Malaysia</a>
+    <a href="#panama">🇵🇦 Panama</a>
   </div>
 </section>
 
@@ -279,12 +310,12 @@ footer a { font-weight:700; }
     <div class="flag" aria-hidden="true">🇵🇹</div>
     <div>
       <h2>Portugal</h2>
-      <p class="country-subtitle">Atlantic coastline, historic towns and varied regional climates.</p>
+      <p class="country-subtitle">Atlantic beaches, historic cities and a wide choice of coastal, island and inland lifestyles.</p>
     </div>
   </div>
   <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/A%20Panoramic%20View%20of%20Porto%27s%20Ribeira%20District%20(55246977394).jpg?width=1400" alt="Sunny panoramic view of Porto’s historic Ribeira district, terracotta rooftops and the Douro River" loading="lazy" decoding="async">
   <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:A_Panoramic_View_of_Porto%27s_Ribeira_District_(55246977394).jpg" target="_blank" rel="noopener">Michael Gaylard · CC BY 4.0</a></small>
-  <p>Portugal offers coastal communities, larger cities and quieter inland areas. The Algarve is known for its sunny climate, while northern Portugal generally has cooler, wetter winters.</p>
+  <p>Portugal combines Atlantic coastline, historic towns, island communities and larger cities with established public services. The Algarve is known for its sunnier, drier climate, while northern areas are generally greener and wetter and inland summers can be very hot. Daily life varies considerably between compact old towns, car-dependent suburbs and busy metropolitan neighbourhoods. Retirees should compare housing availability, winter damp, summer heat, transport and access to the specific healthcare services they may need rather than treating the country as one uniform destination.</p>
   <div class="stats">
     <div class="stat">
       <span class="stat-label">Average household expenditure</span>
@@ -322,35 +353,35 @@ footer a { font-weight:700; }
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tavira%20Ponte%20Romana%20R02.jpg?width=1200" alt="Tavira's historic old bridge, Ponte Romana, crossing the Gilão River in Portugal" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Tavira_Ponte_Romana_R02.jpg" target="_blank" rel="noopener">Marc Ryckaert · CC BY-SA 4.0</a></small>
       <h4>Tavira</h4>
-      <p>A historic Algarve town with traditional architecture, nearby beaches and a relaxed pace of life. Summer can be hot.</p>
+      <p>Tavira is a smaller eastern Algarve town known for its whitewashed buildings, riverside streets, historic bridges and access to the Ria Formosa islands and beaches. It can suit people who prefer a calmer scale than a large resort, with cafés, markets and everyday services close to the centre. Summers are hot and sunny, while the town is quieter outside peak season; check year-round transport, housing availability and how you would reach larger hospitals for specialist care.</p>
       <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Panoramic%20view%20of%20Funchal%20and%20its%20bay.%20Portugal%2C%20Autonomous%20Region%20of%20Madeira%2C%20Southwestern%20Europe.jpg?width=1200" alt="Wide panoramic view of Funchal city and its bay on Madeira island" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Funchal_and_its_bay._Portugal,_Autonomous_Region_of_Madeira,_Southwestern_Europe.jpg" target="_blank" rel="noopener">Mstyslav Chernov · CC BY-SA 3.0</a></small>
       <h4>Funchal</h4>
-      <p>The main city of Madeira, with a mild maritime climate, hillside scenery and access to island walking routes.</p>
+      <p>Madeira’s capital combines a working city, seafront promenades, gardens, markets and a busy calendar of cultural events. The island’s maritime climate is generally milder than much of mainland Portugal, although hillside neighbourhoods can be steep and weather can change quickly with elevation. Funchal has the island’s broadest concentration of services, but island living means some specialist treatment or family visits may require travel to the mainland. Consider slope, accessibility, public transport and the cost of flights as part of the long-term picture.</p>
       <a href="https://www.sesaram.pt/" target="_blank" rel="noopener">Madeira health service ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Braga%20Panorama.jpg?width=900" alt="Panorama of Braga, Portugal" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Braga_Panorama.jpg" target="_blank" rel="noopener">Otto Domes · CC BY-SA 4.0</a></small>
       <h4>Braga</h4>
-      <p>A northern city with historic sites, green spaces and university life. Expect wetter winters than in the Algarve.</p>
+      <p>Braga is a northern city with a historic centre, religious heritage, university life, shopping and a growing modern edge. It offers a more urban routine than a small coastal town, with cafés, public services and connections to other northern cities. Winters are typically wetter and cooler than in the Algarve, and summer days can still be hot. People considering Braga should explore neighbourhoods on foot, check local public transport and compare access to the services they use most often.</p>
       <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yellow%20tram%20in%20Lisbon%2C%20Portugal.jpg?width=900" alt="A classic yellow Lisbon tram on a historic city street" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Yellow_tram_in_Lisbon,_Portugal.jpg" target="_blank" rel="noopener">Bex Walton · CC BY 2.0</a></small>
       <h4>Lisbon</h4>
-      <p>The capital has extensive transport, cultural activities and services, but housing costs can be a major consideration.</p>
+      <p>Lisbon offers the country’s widest range of cultural venues, international connections, restaurants and specialist services, with metro, rail, bus and ferry links across the metropolitan area. Its hills, older pavements and busy tourist districts can make some neighbourhoods less comfortable for people with mobility concerns, while housing costs are often higher than in smaller cities. Look at the whole daily routine—not just the central sights—including lift access, local shops, noise, summer heat and the journey to your preferred hospital or airport.</p>
       <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coimbra%20panoramica.JPG?width=900" alt="Panoramic view of Coimbra, Portugal" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Coimbra_panoramica.JPG" target="_blank" rel="noopener">Carlos Luis M C da Cruz · CC BY-SA 3.0</a></small>
       <h4>Coimbra</h4>
-      <p>A university city known for its historic centre and educational and medical institutions. Summers can be hot.</p>
+      <p>Coimbra is a historic university city with a lively cultural calendar, riverfront areas and important healthcare and educational institutions. It has a smaller-city feel than Lisbon or Porto while still providing many urban amenities. The old centre is hilly, so neighbourhood choice matters if you want to walk for most errands; summers can be hot and winters damp. Compare residential areas near everyday services and transport rather than assuming every part of the city is equally accessible.</p>
       <a href="https://www.sns.gov.pt/" target="_blank" rel="noopener">Explore public healthcare ↗</a>
     </article>
   </div>
@@ -361,12 +392,12 @@ footer a { font-weight:700; }
     <div class="flag" aria-hidden="true">🇹🇭</div>
     <div>
       <h2>Thailand</h2>
-      <p class="country-subtitle">Tropical landscapes, regional food cultures and major urban centres.</p>
+      <p class="country-subtitle">A varied tropical country with lively cities, northern mountains and long coastlines.</p>
     </div>
   </div>
   <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ko%20Tapu%20(James%20Bond)%20Island%20in%20Phang%20Nga%20Bay%2C%20Thailand.jpg?width=1400" alt="Ko Tapu, the iconic limestone island in the turquoise waters of Phang Nga Bay, Thailand" loading="lazy" decoding="async">
   <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Ko_Tapu_(James_Bond)_Island_in_Phang_Nga_Bay,_Thailand.jpg" target="_blank" rel="noopener">Vyacheslav Argenberg · CC BY 4.0</a></small>
-  <p>Thailand has a tropical climate, with regional differences between the north, central plains and southern coasts. Healthcare access, insurance and visa eligibility should be checked for your circumstances.</p>
+  <p>Thailand offers a broad range of lifestyles, from the scale and specialist services of Bangkok to northern cultural centres, quieter seaside towns and island communities. Heat and humidity are common, but rainfall, seasonal air quality and local conditions differ by region. Everyday life may feel convenient and sociable in established urban areas, while island or rural living can mean longer journeys for specialist services. Before choosing a location, research long-stay visa requirements, health insurance, hospital access, air quality, transport and how comfortable you feel navigating daily life across language and cultural differences.</p>
   <div class="stats">
     <div class="stat">
       <span class="stat-label">Average household expenditure</span>
@@ -404,35 +435,35 @@ footer a { font-weight:700; }
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Doi%20Suthep%20Temple%20Chiang%20Mai%20Thailand.jpg?width=1200" alt="Golden chedi of Wat Phra That Doi Suthep temple surrounded by green mountain forest in Chiang Mai" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Doi_Suthep_Temple_Chiang_Mai_Thailand.jpg" target="_blank" rel="noopener">Philip Nalangan · CC BY 4.0</a></small>
       <h4>Chiang Mai</h4>
-      <p>A northern city with mountain scenery, temples, markets and a large international community. Seasonal air pollution deserves attention.</p>
+      <p>Chiang Mai blends a historic old city, temples, markets, cafés, universities and access to northern Thailand’s mountains and countryside. It offers a slower rhythm than Bangkok while retaining private hospitals, shopping and an established international community. The key trade-off is seasonal air pollution, which can become severe during parts of the dry season, alongside hot weather and periods of heavy rain. Anyone with respiratory concerns should review seasonal air-quality data and consider a plan for spending the worst periods elsewhere.</p>
       <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bangkok%2C%20Thailand%2C%20Chao%20Praya%2C%202024.jpg?width=1200" alt="Bangkok skyline beside the Chao Phraya River at dusk, with modern high-rise buildings and river views" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Bangkok,_Thailand,_Chao_Praya,_2024.jpg" target="_blank" rel="noopener">OPK-Photography · CC BY-SA 4.0</a></small>
       <h4>Bangkok</h4>
-      <p>A large metropolitan centre with extensive transport, shopping and specialist medical services. Traffic and heat may affect daily comfort.</p>
+      <p>Bangkok is a vast, energetic capital with a deep range of hospitals, specialist clinics, shopping, restaurants, cultural venues and international flight connections. The BTS Skytrain and MRT make some districts easier to navigate, but traffic, heat, air pollution, crowds and long travel times can shape everyday comfort. Neighbourhood choice is crucial: living close to a station, supermarket and preferred medical provider may matter more than being near a famous landmark. Compare building accessibility, noise, flood exposure and insurance coverage before committing.</p>
       <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/01%20Hua%20Hin%20Beach.jpg?width=900" alt="Hua Hin beach in Thailand" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:01_Hua_Hin_Beach.jpg" target="_blank" rel="noopener">Elmschrat · CC0 1.0</a></small>
       <h4>Hua Hin</h4>
-      <p>A coastal town with beaches, markets and residential neighbourhoods popular with both local residents and international visitors.</p>
+      <p>Hua Hin is a coastal town with a long-established domestic holiday scene, seafood markets, golf courses and residential areas that range from the busy centre to quieter outskirts. It offers beach access without the scale of Bangkok, although a car or taxi may be useful for errands outside central areas. Heat and humidity are persistent, and the sea is not equally suitable for swimming at all times of year. Check the location of hospitals, the quality of local transport and how easily you can reach Bangkok for complex specialist care.</p>
       <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Phuket%20old%20town%20(52549766215).jpg?width=900" alt="Historic streets of Phuket Old Town, Thailand" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Phuket_old_town_(52549766215).jpg" target="_blank" rel="noopener">Mussi Katz · CC0 1.0</a></small>
       <h4>Phuket</h4>
-      <p>An island province with beaches, international services and a tropical climate. Island location and seasonal tourism can affect costs.</p>
+      <p>Phuket offers beaches, international restaurants, shopping and a range of residential communities, from busy tourist districts to quieter inland and southern areas. It has private hospitals and an international airport, but the island is spread out and traffic can make cross-island journeys slow. Costs and noise can rise in popular visitor areas, while the rainy season changes beach conditions and outdoor routines. Retirees should test the exact neighbourhood during both high and low seasons and consider transport, flooding, medical insurance and evacuation or referral arrangements.</p>
       <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/DFC%204518%20Sun-soaked%20city%20beach%20with%20high-rise%20skyline%20palm%20trees%20and%20people%20enjoying%20a%20calm%20day%20by%20the%20water.jpg?width=900" alt="Pattaya beachfront promenade with palm trees, bay and city skyline" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:DFC_4518_Sun-soaked_city_beach_with_high-rise_skyline_palm_trees_and_people_enjoying_a_calm_day_by_the_water.jpg" target="_blank" rel="noopener">PattayaPatrol · CC BY-SA 4.0</a></small>
       <h4>Pattaya</h4>
-      <p>A coastal urban area with shopping, transport links and many services. Research neighbourhood noise, traffic and the healthcare facility you may need.</p>
+      <p>Pattaya is a sizeable coastal city with shopping centres, markets, restaurants, hospitals and connections to Bangkok and the Eastern Economic Corridor. It is more urban and commercially developed than many quiet beach towns, and the atmosphere varies sharply between neighbourhoods. Some areas are lively late into the night, while residential districts farther from the busiest strips can be calmer. Visit at different times of day, assess pavements and road crossings, and check that nearby healthcare services match your needs.</p>
       <a href="https://www.moph.go.th/" target="_blank" rel="noopener">Health ministry resources ↗</a>
     </article>
   </div>
@@ -443,12 +474,12 @@ footer a { font-weight:700; }
     <div class="flag" aria-hidden="true">🇪🇸</div>
     <div>
       <h2>Spain</h2>
-      <p class="country-subtitle">Mediterranean coastlines, historic cities and diverse regional lifestyles.</p>
+      <p class="country-subtitle">Mediterranean beaches, historic inland cities and varied regional climates.</p>
     </div>
   </div>
   <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Plaza%20de%20Espana%20de%20Sevilla.jpg?width=1400" alt="The ornate Plaza de España in Seville, showcasing distinctive Spanish architecture" loading="lazy" decoding="async">
   <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg" target="_blank" rel="noopener">Gica-cobra · CC BY-SA 4.0</a></small>
-  <p>Spain combines large metropolitan areas, coastal communities and inland historic cities. Climate, housing and access to healthcare vary by region. Check residency and healthcare eligibility before deciding to move.</p>
+  <p>Spain offers major metropolitan centres, lively coastal cities, smaller historic towns and inland regions with very different seasons. Mediterranean and southern coastal areas often have mild winters, while summer heat can be intense; northern Spain is generally greener and wetter, and inland areas may experience colder winters and larger temperature swings. Public transport is strong in many cities but varies between neighbourhoods and smaller towns. Retirees should look beyond holiday appeal and compare housing costs, summer comfort, walkability, local transport, language needs and eligibility for public or private healthcare.</p>
   <div class="stats">
     <div class="stat">
       <span class="stat-label">Average household expenditure</span>
@@ -486,35 +517,35 @@ footer a { font-weight:700; }
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica%20de%20la%20ciudad%20de%20Valencia%2C%20Espa%C3%B1a.jpg?width=900" alt="Panoramic view of Valencia, Spain" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_la_ciudad_de_Valencia,_Espa%C3%B1a.jpg" target="_blank" rel="noopener">Juan Emilio Prades Bel · CC BY 4.0</a></small>
       <h4>Valencia</h4>
-      <p>A Mediterranean city with beaches, parks, public transport and a mix of urban and outdoor activities.</p>
+      <p>Valencia combines a historic centre, major museums, a large park in the former Turia riverbed, beaches and a useful metro, tram and bus network. It is a substantial city with year-round services and a strong food culture, while many districts still feel neighbourhood-oriented. Summers are hot and humid at times, and some low-lying areas require attention to flood risk and local alerts. Compare access to shade, public transport, hospitals and everyday shops, and remember that the most popular central and coastal districts may command higher housing prices.</p>
       <a href="https://www.san.gva.es/" target="_blank" rel="noopener">Valencian health service ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A1laga%20City.jpg?width=900" alt="View of Málaga, Spain" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:M%C3%A1laga_City.jpg" target="_blank" rel="noopener">Triptosia · CC BY-SA 4.0</a></small>
       <h4>Málaga</h4>
-      <p>A southern coastal city with a historic centre, cultural attractions and generally mild winters. Summers can be hot.</p>
+      <p>Málaga is a lively Andalusian city with a historic core, museums, a port, beaches and a busy programme of cultural events. Its airport and rail connections are useful for visitors and residents who travel regularly, and the surrounding province offers smaller coastal and inland communities. Winters are usually mild, but summer heat can be intense and tourist demand affects some neighbourhoods. Check housing costs, noise, walkability and the distance from your home to public transport and healthcare facilities.</p>
       <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20evening%20panorama%20Mirador%20San%20Nicolas%20sRGB-1.jpg?width=1200" alt="Panoramic view of the Alhambra palace and Generalife in Granada, Spain, with the Sierra Nevada mountains behind" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Alhambra_evening_panorama_Mirador_San_Nicolas_sRGB-1.jpg" target="_blank" rel="noopener">Slaunger · CC BY-SA 3.0</a></small>
       <h4>Granada</h4>
-      <p>A historic inland city near the Sierra Nevada. Seasonal temperature differences are greater than on the coast.</p>
+      <p>Granada is known for its historic quarters, university atmosphere, gardens and views toward the Sierra Nevada. It offers a cultural, inland alternative to Spain’s coastal retirement centres, with mountain excursions nearby and a compact centre in many areas. Winters can be cold and summers very hot, so it has a wider seasonal range than much of the Mediterranean coast. The steep lanes of some old neighbourhoods may be challenging for mobility, making flatter districts, public transport and proximity to healthcare worth comparing.</p>
       <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Panorama-view-Alicante.jpg?width=900" alt="Panoramic view of Alicante, Spain" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Panorama-view-Alicante.jpg" target="_blank" rel="noopener">acediscovery · CC BY 4.0</a></small>
       <h4>Alicante</h4>
-      <p>A coastal city with beaches, an established urban centre and access to the wider Costa Blanca region.</p>
+      <p>Alicante offers a working city, seafront promenade, beaches, markets, tram connections and an airport serving many European routes. Its size can provide a practical balance between coastal living and access to year-round services, while nearby Costa Blanca towns offer quieter alternatives. Summers are hot and sunny, and some districts are more car-dependent than they first appear. Explore outside the holiday season, compare public transport and local medical access, and check how exposed your preferred area is to heat and water restrictions.</p>
       <a href="https://www.san.gva.es/" target="_blank" rel="noopener">Valencian health service ↗</a>
     </article>
     <article class="city-card">
       <img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Seville%20panorama.jpg?width=900" alt="Panorama of Seville Cathedral, Spain" loading="lazy" decoding="async">
       <small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Seville_panorama.jpg" target="_blank" rel="noopener">Thomas Weyrauch · CC BY-SA 3.0</a></small>
       <h4>Seville</h4>
-      <p>A lively historic city with cultural attractions and warm winters. Summer heat can be particularly intense.</p>
+      <p>Seville is a major Andalusian city celebrated for its architecture, gardens, food, festivals and extensive historic centre. It offers the services and cultural life of a regional capital, with rail connections and an airport, but many residents adjust their routines around extreme summer heat. Shade, air conditioning, home insulation and the ability to avoid walking during the hottest hours are practical considerations, especially for older adults. Compare neighbourhoods for public transport, lift access, noise during festivals and proximity to clinics and hospitals.</p>
       <a href="https://www.sspa.juntadeandalucia.es/servicioandaluzdesalud/" target="_blank" rel="noopener">Andalusian health service ↗</a>
     </article>
   </div>
@@ -525,6 +556,69 @@ footer a { font-weight:700; }
   <p class="intro">Before choosing a place, consider your actual monthly budget, housing, healthcare eligibility, insurance, climate preferences, transport, safety, visa rules and tax position. Visit during different seasons if possible.</p>
   <div class="note">
     <strong>Important:</strong> This page provides general information for early research. It does not rank countries, provide immigration or tax advice, or guarantee healthcare access. Confirm current details with official authorities before making a decision.
+  </div>
+</section>
+
+<section class="country" id="mexico">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇲🇽</div>
+    <div>
+      <h2>Mexico</h2>
+      <p class="country-subtitle">A large and diverse country of colonial cities, highland towns and Pacific and Caribbean coastlines.</p>
+    </div>
+  </div>
+  <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Mexico%20City%20Panorama.jpg?width=1400" alt="Panoramic view of Mexico City from Torre Latinoamericana" loading="lazy" decoding="async">
+  <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Mexico_City_Panorama.jpg" target="_blank" rel="noopener noreferrer">Schmachtin · CC BY-SA 3.0</a></small>
+  <p>Mexico is not one retirement experience: altitude, climate, language, transport and access to medical care can be very different from one region to another. Highland cities may have mild days and cooler nights, while coastal destinations are often hot and humid. Larger cities and established retirement communities may offer private hospitals, international connections and social networks, but the right choice depends on the neighbourhood and the services you personally need. Learn enough Spanish for everyday tasks, check current official travel and safety advice for the specific state and city, and investigate residency, health insurance and tax matters independently. Renting for a season before buying can help you experience the climate and daily routine beyond the holiday areas.</p>
+  <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
+  <div class="city-grid">
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Merida%20(Mexiko).jpg?width=1200" alt="Historic municipal building in Mérida, Yucatán" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Merida_(Mexiko).jpg" target="_blank" rel="noopener noreferrer">Dino Mueller · CC BY-SA 3.0</a></small><h4>Mérida</h4><p>Mérida, the capital of Yucatán, is known for its historic centre, markets, cultural events and strong regional identity. It has grown into a service centre for the surrounding peninsula, with restaurants, shops and private medical options. The major consideration is climate: heat and humidity can be intense, particularly in the hottest months, so air conditioning, shade and reliable transport may be essential. Research neighbourhoods outside the busiest centre as well as access to specialist care and the distance to the coast.</p><a href="https://www.visitmerida.mx/" target="_blank" rel="noopener">Official Mérida visitor information ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Parroquia%20de%20San%20Miguel%20Allende.jpg?width=1200" alt="Parroquia of San Miguel Arcángel in San Miguel de Allende" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Parroquia_de_San_Miguel_Allende.jpg" target="_blank" rel="noopener noreferrer">Luna Guadalupe · CC BY 4.0</a></small><h4>San Miguel de Allende</h4><p>This highland city is admired for its colourful historic architecture, arts scene, galleries, restaurants and active international community. Its elevation usually brings a different feel from Mexico’s tropical coasts, with sunny days and cooler evenings. The historic centre has steep or uneven streets, and popularity with international residents can push up housing prices in sought-after areas. Compare quieter residential neighbourhoods, accessibility, water availability and the location of hospitals for routine and specialist treatment.</p><a href="https://visitmexico.com/en/" target="_blank" rel="noopener">Visit Mexico official destination guide ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Puerto%20Vallarta%2C%20Jalisco%2C%202025%20-%20115.jpg?width=1200" alt="Coastal city views in Puerto Vallarta, Mexico" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Puerto_Vallarta,_Jalisco,_2025_-_115.jpg" target="_blank" rel="noopener noreferrer">Another Believer · CC BY-SA 4.0</a></small><h4>Puerto Vallarta</h4><p>Puerto Vallarta combines a Pacific bay, a walkable seafront promenade, restaurants, arts and access to outdoor activities. It has an established international community and air links that can be convenient for visitors and family. The climate is tropical, with a hotter, wetter period and seasonal changes in beach conditions; popular districts can be busy and more expensive than inland areas. Check the distance from a potential home to hospitals, grocery shops and transport, and consider how you would manage during the rainy season.</p><a href="https://visitmexico.com/en/destino/2641/puerto-vallarta" target="_blank" rel="noopener">Official Puerto Vallarta destination guide ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ajijic.jpg?width=1200" alt="Ajijic village on Lake Chapala, Jalisco" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Ajijic.jpg" target="_blank" rel="noopener noreferrer">Jaec · CC BY-SA 2.0</a></small><h4>Ajijic and Lake Chapala</h4><p>Ajijic and neighbouring communities along Lake Chapala attract people who want a small-town setting, lakeside scenery and social activities rather than a large metropolis. The highland location generally offers more moderate temperatures than the coast, though rainy-season weather and cooler nights still matter. Local services are available, but complex medical needs may require travel to Guadalajara. Before settling, check transport options, air quality, water supply, the practicalities of the nearest hospital and whether the community feels comfortable outside the main expat areas.</p><a href="https://visitmexico.com/en/destinos/14/14" target="_blank" rel="noopener">Visit Mexico destination guide ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Palacio%20de%20Bellas%20Artes%2C%20Mexico%20City%2C%20MX.jpg?width=1200" alt="Palacio de Bellas Artes in Mexico City" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Palacio_de_Bellas_Artes,_Mexico_City,_MX.jpg" target="_blank" rel="noopener noreferrer">Timothy Neesam · CC BY-SA 4.0</a></small><h4>Mexico City</h4><p>Mexico City offers exceptional choice in museums, food, parks, hospitals, public transport and international connections. Its size means neighbourhoods can feel like distinct small cities, so walkability, noise, air quality, elevation and travel times vary widely. It may suit retirees who want a rich urban routine and a broad range of specialist services, but traffic and the scale of the city can be tiring. Visit the specific districts you would consider living in and test ordinary journeys before deciding.</p><a href="https://visitmexico.com/en/destinos" target="_blank" rel="noopener">Official Mexico destination guide ↗</a></article>
+  </div>
+</section>
+
+<section class="country" id="malaysia">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇲🇾</div>
+    <div>
+      <h2>Malaysia</h2>
+      <p class="country-subtitle">Multicultural cities, excellent food traditions, tropical islands and modern urban infrastructure.</p>
+    </div>
+  </div>
+  <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kuala%20Lumpur%20Cityscape.jpg?width=1400" alt="Kuala Lumpur cityscape with the Twin Towers and KL Tower" loading="lazy" decoding="async">
+  <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_Cityscape.jpg" target="_blank" rel="noopener noreferrer">Saad Abdullah · CC BY-SA 3.0</a></small>
+  <p>Malaysia brings together Malay, Chinese, Indian and Indigenous cultures, with English commonly used in many urban and professional settings. The climate is tropical throughout the year, so heat, humidity and heavy rain are part of everyday planning; local weather patterns differ between the peninsula and East Malaysia. Kuala Lumpur has the widest choice of major hospitals, transport and international connections, while Penang combines heritage and urban services, and smaller places can offer a quieter pace with fewer specialist facilities. Before moving, check the current Malaysia My Second Home or other applicable residency rules through official sources, understand private medical insurance and treatment costs, and consider how comfortable you are with tropical weather and local customs.</p>
+  <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
+  <div class="city-grid">
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/George%20Town%2C%20Penang%2C%20Malaysia.jpg?width=1200" alt="Historic George Town on Penang island, Malaysia" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:George_Town,_Penang,_Malaysia.jpg" target="_blank" rel="noopener noreferrer">cat_collector · CC BY 2.0</a></small><h4>Penang and George Town</h4><p>Penang combines George Town’s UNESCO-listed heritage streets, temples, mosques, historic shophouses and celebrated food culture with modern shopping and medical services. The island has a well-established international community and a mix of dense urban neighbourhoods and quieter coastal areas. Heat and humidity are constant, and traffic can be heavy around popular districts. Compare island and mainland locations, walkability, flood exposure and the distance to your preferred hospital; the most atmospheric heritage streets may not be the easiest for every mobility level.</p><a href="https://ebrochures.malaysia.travel/en/islands-and-beaches/penang/" target="_blank" rel="noopener">Tourism Malaysia: Penang ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Petronas%20twin%20towers.jpg?width=1200" alt="Petronas Twin Towers in Kuala Lumpur" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Petronas_twin_towers.jpg" target="_blank" rel="noopener noreferrer">Honzasoukup · CC BY 3.0</a></small><h4>Kuala Lumpur</h4><p>Malaysia’s capital is the strongest choice for people who want a large city, major private hospitals, international flights, rail transit, shopping and a wide variety of restaurants. Neighbourhoods range from high-rise districts with extensive amenities to older areas with local markets and street life. The tropical heat and frequent downpours can make walking less comfortable, and many daily routines still depend on cars or ride-hailing outside rail corridors. Check the actual walking route to stations, building accessibility, traffic noise and the insurance arrangements required by hospitals.</p><a href="https://www.malaysia.travel/about-malaysia" target="_blank" rel="noopener">Tourism Malaysia: About Malaysia ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ipoh.jpg?width=1200" alt="Aerial view of Ipoh city and its suburbs" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Ipoh.jpg" target="_blank" rel="noopener noreferrer">Adiyon84 · Public domain</a></small><h4>Ipoh</h4><p>Ipoh is a smaller city known for its historic shopfronts, limestone hills, local food and a less intense pace than Kuala Lumpur. It has everyday shopping, rail connections and local medical services, while some highly specialised treatment may mean travelling to a larger centre. The city is hot and humid, and neighbourhoods differ in how easy it is to walk or get around without a car. It may appeal to people who value food and a quieter routine, provided they check hospital access, transport and the services available close to home.</p><a href="https://www.malaysia.gov.my/en/topics/destinasi-pelancongan-di-malaysia" target="_blank" rel="noopener">Malaysia government: tourism destinations ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Melaka-Dutch-Square-2164.jpg?width=1200" alt="Dutch Square and Christ Church in Melaka" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Melaka-Dutch-Square-2164.jpg" target="_blank" rel="noopener noreferrer">Vmenkov · CC BY-SA 3.0</a></small><h4>Melaka</h4><p>Melaka offers a compact historic centre, riverside walks, museums and a strong mix of Malay, Chinese, Indian and Portuguese-influenced heritage. It is smaller and generally calmer than Kuala Lumpur, with a strong visitor economy and access to everyday services. Weekend and holiday traffic can make the centre crowded, while the hottest part of the day can be uncomfortable for long walks. Retirees should compare quieter residential districts with the tourist core, confirm the range of nearby healthcare services and check transport links for trips to larger cities.</p><a href="https://www.malaysia.gov.my/en/topics/destinasi-pelancongan-di-malaysia" target="_blank" rel="noopener">Malaysia government: tourism destinations ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kota%20Kinabalu%20-%20Borneo.jpg?width=1200" alt="Kota Kinabalu waterfront in Sabah, Malaysia" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Kota_Kinabalu_-_Borneo.jpg" target="_blank" rel="noopener noreferrer">Gossipguy · CC BY-SA 3.0</a></small><h4>Kota Kinabalu</h4><p>Kota Kinabalu, on Malaysian Borneo, offers a coastal setting, markets, seafood, island day trips and access to Sabah’s natural landscapes. It has an airport and a regional service centre, but it is more geographically separate from Peninsular Malaysia, which affects onward travel and access to some specialist services. Tropical heat, heavy rain and the distance between neighbourhoods are practical considerations. It may suit people who value nature and a smaller coastal city, as long as they are comfortable with the healthcare and transport options available locally.</p><a href="https://www.malaysia.travel/" target="_blank" rel="noopener">Tourism Malaysia ↗</a></article>
+  </div>
+</section>
+
+<section class="country" id="panama">
+  <div class="country-heading">
+    <div class="flag" aria-hidden="true">🇵🇦</div>
+    <div>
+      <h2>Panama</h2>
+      <p class="country-subtitle">A compact Central American country with a global city, Pacific beaches and cooler mountain towns.</p>
+    </div>
+  </div>
+  <img class="country-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Panama%20Skyline.jpg?width=1400" alt="Panama City skyline near Cinta Costera" loading="lazy" decoding="async">
+  <small class="country-photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Panama_Skyline.jpg" target="_blank" rel="noopener noreferrer">Nico2panama · CC BY-SA 3.0</a></small>
+  <p>Panama offers strikingly different living environments within a relatively small country: the capital has the broadest range of hospitals and international connections, mountain communities are cooler and greener, and coastal towns offer a relaxed seaside routine. The US dollar is used alongside the balboa at parity, which can simplify some budgeting for people with dollar income, though personal exchange-rate exposure still depends on where income and savings originate. Much of the country is hot and humid, with a distinct rainy season; higher-elevation areas are generally cooler. Research residency and pension-related programmes through official sources, check private insurance and hospital access, and test transport and everyday services in the exact town before committing.</p>
+  <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
+  <div class="city-grid">
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Panama%20City%20skyline.jpg?width=1200" alt="Panama City skyline along the waterfront" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Panama_City_skyline.jpg" target="_blank" rel="noopener noreferrer">JurriaanH · CC BY-SA 3.0</a></small><h4>Panama City</h4><p>The capital combines a modern skyline, historic Casco Antiguo, restaurants, shopping, international flights and the country’s broadest concentration of specialist medical services. Neighbourhoods differ greatly: some are walkable and close to services, while others are car-oriented and separated by busy roads. Heat, humidity, traffic and heavy seasonal rain can affect everyday routines. It may suit retirees who prioritise medical access and international connectivity, but compare building quality, flood risk, noise and travel times to the specific hospital you expect to use.</p><a href="https://www.tourismpanama.com/places-to-visit/" target="_blank" rel="noopener">Official Tourism Panama destination guide ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Boquete%2C%20Panama.jpg?width=1200" alt="Green highlands and coffee-growing landscape around Boquete" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Boquete,_Panama.jpg" target="_blank" rel="noopener noreferrer">Michael (moik) McCullough · CC BY 2.0</a></small><h4>Boquete</h4><p>Boquete sits in the green highlands of Chiriquí and is known for mountain scenery, coffee farms, gardens, walking routes and a cooler climate than the lowland tropics. Its small-town atmosphere and international community can appeal to people who prefer nature and a slower pace. The trade-off is that the range of specialist healthcare, shopping and services is more limited than in the capital; many residents travel to David for larger facilities. Consider rainy-season conditions, steep roads, transport and how far you are comfortable living from specialist care.</p><a href="https://www.tourismpanama.com/places-to-visit/boquete/" target="_blank" rel="noopener">Official Tourism Panama: Boquete ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/David-Panama.jpg?width=1200" alt="View of David, Chiriquí, Panama" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:David-Panama.jpg" target="_blank" rel="noopener noreferrer">Moto-gundy · CC BY-SA 3.0</a></small><h4>David</h4><p>David is a practical regional city in western Panama, with shopping centres, markets, banks, an airport and a concentration of hospitals and clinics serving Chiriquí. It is less internationally polished than the capital but offers many everyday services without the same metropolitan scale. The lowland climate is hot, and a car or taxi may be useful depending on where you live. David can be a sensible base for people who want access to services while remaining near the highlands and Pacific coast; visit residential areas and check the specific medical facilities available.</p><a href="https://david.municipios.gob.pa/municipio/" target="_blank" rel="noopener">Municipality of David ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Coronado%20Beach.JPG?width=1200" alt="Sunset at Coronado Beach on Panama's Pacific coast" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Coronado_Beach.JPG" target="_blank" rel="noopener noreferrer">Myukie · CC0 1.0</a></small><h4>Coronado</h4><p>Coronado is a Pacific beach community west of Panama City, with residential developments, supermarkets, restaurants, golf and access to nearby coastal towns. It can offer a beach-oriented lifestyle while remaining within driving distance of the capital, but traffic on the main highway can make travel times unpredictable. The climate is hot and humid, with a pronounced rainy season, and private clinics locally do not replace every specialist service available in Panama City. Check transport, healthcare referral arrangements, water and power reliability, and whether the area feels lively enough outside holiday periods.</p><a href="https://www.tourismpanama.com/places-to-visit/" target="_blank" rel="noopener">Official Tourism Panama destination guide ↗</a></article>
+    <article class="city-card"><img class="city-photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Bocas%20del%20Toro%20Panama.jpg?width=1200" alt="Aerial view of Bocas del Toro, Panama" loading="lazy" decoding="async"><small class="photo-credit">Photo: <a href="https://commons.wikimedia.org/wiki/File:Bocas_del_Toro_Panama.jpg" target="_blank" rel="noopener noreferrer">Dronepicr · CC BY 3.0</a></small><h4>Bocas del Toro</h4><p>Bocas del Toro offers Caribbean islands, a relaxed waterfront atmosphere, tropical nature and access to beaches and marine activities. The lifestyle can be appealing to people who want a small island community, but island living brings practical trade-offs: weather can disrupt travel, services are more limited than in larger cities and some errands require boats or longer journeys. Humidity and rainfall are high, and the tourist season can change the pace of the main town. Before considering a permanent move, check year-round housing, utilities, transport reliability and the route to hospitals for routine and emergency care.</p><a href="https://www.tourismpanama.com/places-to-visit/" target="_blank" rel="noopener">Official Tourism Panama destination guide ↗</a></article>
   </div>
 </section>
 
