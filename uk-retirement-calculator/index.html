@@ -86,7 +86,7 @@ function calculate(){
   $('net').textContent=money(income-tax);
   $('effective').textContent=(income>0?(tax/income*100):0).toFixed(1)+'%';
   $('total').textContent=money(income);
-  $('pa').textContent=money(Math.min(pa,income));
+  $('pa').textContent=money(pa);
   $('taxable').textContent=money(taxable);
   $('monthly').textContent=money((income-tax)/12);
 }
