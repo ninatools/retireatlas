@@ -91,7 +91,7 @@ function calculate(){
   $('monthly').textContent=money((income-tax)/12);
 }
 $('tax-form').addEventListener('submit',e=>{e.preventDefault();calculate();});
-$('reset').addEventListener('click',()=>{ $('tax-form').reset(); calculate();});
+$('reset').addEventListener('click',()=>{ $('jurisdiction').value='rUK'; $('state').value='12000'; $('db').value='0'; $('dc').value='0'; $('other').value='0'; calculate();});
 ['jurisdiction',...fields].forEach(id=>$(id).addEventListener('change',calculate));
 calculate();
 })();
