@@ -59,7 +59,7 @@ function calculate(){
     $('error').style.display='block';return;
   }
   $('error').style.display='none';
-  const pa = Math.max(0,12570 - Math.ceil(Math.max(0,ani-100000)/2));
+  const pa = Math.max(0,12570 - Math.floor(Math.max(0,ani-100000)/2));
   const taxable = Math.max(0,income-pa);
   let tax=0;
   if($('jurisdiction').value==='rUK'){
