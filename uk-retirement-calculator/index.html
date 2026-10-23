@@ -71,14 +71,15 @@ function calculate(){
     tax=basic*.20+higher*.40+additional*.45;
   } else {
     // Scotland's 2026–27 cumulative thresholds are expressed as total income thresholds.
-    const bands=[{limit:2827,rate:.19},{limit:12719,rate:.20},{limit:27101,rate:.21},{limit:62438,rate:.42},{limit:112570,rate:.45},{limit:Infinity,rate:.48}];
-    let previous=0, remaining=taxable;
+    const bands=[{threshold:16537,rate:.19},{threshold:29526,rate:.20},{threshold:43662,rate:.21},{threshold:75000,rate:.42},{threshold:125140,rate:.45},{threshold:Infinity,rate:.48}];
+    let previousTaxableBoundary=0, remaining=taxable;
     for(const band of bands){
-      const width=band.limit===Infinity?Infinity:Math.max(0,band.limit-pa-previous);
+      const boundary=band.threshold===Infinity?Infinity:Math.max(0,band.threshold-pa);
+      const width=boundary===Infinity?Infinity:Math.max(0,boundary-previousTaxableBoundary);
       const amount=Math.min(remaining,width);
       if(amount>0){tax+=amount*band.rate;remaining-=amount;}
       if(remaining<=0)break;
-      previous=band.limit;
+      previousTaxableBoundary=boundary;
     }
   }
   tax=Math.max(0,Math.min(tax,income));
