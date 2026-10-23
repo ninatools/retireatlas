@@ -26,7 +26,6 @@ footer{max-width:1180px;margin:0 auto;padding:0 16px 30px;color:var(--muted);fon
 <form id="tax-form" novalidate>
 <div class="section"><div class="field-grid">
 <div><label for="jurisdiction">UK tax jurisdiction</label><select id="jurisdiction"><option value="rUK">England, Wales or Northern Ireland</option><option value="scotland">Scotland</option></select><p class="hint">Income tax bands differ in Scotland.</p></div>
-<div><label for="ani">Adjusted net income (£/year)</label><input id="ani" type="number" min="0" max="100000000" step="1" placeholder="Use total entered income"><p class="hint">Leave blank to use the pension income entered below. Enter a different figure only if you know your adjusted net income.</p></div>
 <div><label for="state">State Pension (£/year)</label><input id="state" type="number" min="0" max="100000000" step="1" value="12000" required></div>
 <div><label for="db">Defined-benefit / workplace pension (£/year)</label><input id="db" type="number" min="0" max="100000000" step="1" value="0" required></div>
 <div><label for="dc">Taxable defined-contribution withdrawals (£/year)</label><input id="dc" type="number" min="0" max="100000000" step="1" value="0" required></div>
@@ -54,9 +53,9 @@ const num = id => Number($(id).value);
 const fields = ['state','db','dc','other'];
 function calculate(){
   const income = fields.reduce((sum,id)=>sum+num(id),0);
-  const ani = $('ani').value.trim()==='' ? income : Number($('ani').value);
-  if(!Number.isFinite(ani)||ani<0||fields.some(id=>$(id).value.trim()===''||!Number.isFinite(num(id))||num(id)<0)){
-    $('error').textContent='Please enter valid non-negative annual amounts for all pension income fields and adjusted net income, if supplied.';
+  const ani = income;
+  if(fields.some(id=>$(id).value.trim()===''||!Number.isFinite(num(id))||num(id)<0)){
+    $('error').textContent='Please enter valid non-negative annual amounts for all pension income fields.';
     $('error').style.display='block';return;
   }
   $('error').style.display='none';
@@ -92,8 +91,8 @@ function calculate(){
   $('monthly').textContent=money((income-tax)/12);
 }
 $('tax-form').addEventListener('submit',e=>{e.preventDefault();calculate();});
-$('reset').addEventListener('click',()=>{ $('tax-form').reset(); $('ani').value=''; calculate();});
-['jurisdiction',...fields,'ani'].forEach(id=>$(id).addEventListener('change',calculate));
+$('reset').addEventListener('click',()=>{ $('tax-form').reset(); calculate();});
+['jurisdiction',...fields].forEach(id=>$(id).addEventListener('change',calculate));
 calculate();
 })();
 </script>
