@@ -129,20 +129,19 @@ const money = value => new Intl.NumberFormat('en-AU',{style:'currency',currency:
 const preciseMoney = value => new Intl.NumberFormat('en-AU',{style:'currency',currency:'AUD',maximumFractionDigits:2}).format(Number.isFinite(value)?value:0);
 const num = id => Number($(id).value);
 const clamp = (x,lo,hi) => Math.min(hi,Math.max(lo,x));
-const valid = (ids) => ids.every(id => $(id).checkValidity() && Number.isFinite(num(id)) && num(id)>=0);
+const valid = (ids) => ids.every(id => $(id).checkValidity() && Number.isFinite(num(id)) && (id==='returnRate' ? num(id)>=-10 : num(id)>=0));
 function simulate(){
  const ids=['age','retireAge','lifeAge','super','savings','salary','sg','extra','returnRate','inflation','expenses'];
- if(!valid(ids)){ $('projectionNote').textContent='Please check the highlighted inputs and enter valid non-negative values.'; return; }
+ if(!valid(ids)){ $('projectionNote').textContent='Please check the highlighted inputs and enter valid values.'; return; }
  const age=num('age'), retire=num('retireAge'), life=num('lifeAge'), startSuper=num('super'), startSavings=num('savings'), salary=num('salary'), sg=num('sg')/100, extra=num('extra'), nominal=num('returnRate')/100, inf=num('inflation')/100, expenses=num('expenses');
  if(retire<=age || life<=retire){ $('projectionNote').textContent='Retirement age must be greater than your current age, and plan-through age must be greater than retirement age.'; return; }
  const years=Math.round(retire-age), real=(1+nominal)/(1+inf)-1;
  let s=startSuper, o=startSavings; const history=[{age:age,total:s+o}];
  for(let y=1;y<=years;y++){ s=s*(1+nominal)+salary*sg*(1-.15); o=o*(1+nominal)+extra; history.push({age:age+y,total:s+o}); }
  const total=s+o, today=total/Math.pow(1+inf,years);
- let needed=0;
- if(Math.abs(real)<0.0000001){needed=expenses*(life-retire);}
- else if(real>0){needed=expenses*(1-Math.pow(1+real,-(life-retire)))/real;}
- else {needed=expenses*(Math.pow(1+real,life-retire)-1)/real;}
+ const yearsInRetirement=life-retire;
+ // Present value of level real withdrawals: valid for positive and negative real returns above -100%.
+ const needed=Math.abs(real)<0.0000001 ? expenses*yearsInRetirement : expenses*(1-Math.pow(1+real,-yearsInRetirement))/real;
  const gap=today-needed, funded=needed>0?clamp(today/needed*100,0,100):100;
  $('nominalBalance').textContent=money(total); $('realBalance').textContent=money(today);
  $('spendingValue').textContent=money(expenses); $('realReturn').textContent=(real*100).toFixed(2)+'%';
