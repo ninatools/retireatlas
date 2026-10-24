@@ -171,7 +171,8 @@ function pension(){
  const deemThreshold=couple?110600:66800, deem1=Math.min(financial,deemThreshold)*.0175, deem2=Math.max(0,financial-deemThreshold)*.0375;
  const deemed=deem1+deem2, fortnightIncome=other+(deemed/26);
  let incomeRate=Math.max(0,full-Math.max(0,fortnightIncome-freeIncome)*incomeReduction);
- let assetsRate=Math.max(0,full-(Math.max(0,assets-fullAssets)/1000)*3);
+ // Standard assets taper is $3 per full $1,000 above the free area; apply the published cut-off explicitly.
+ let assetsRate=Math.max(0,full-Math.floor(Math.max(0,assets-fullAssets)/1000)*3);
  if(assets>=cutoffAssets)assetsRate=0;
  // The couple reduction is A$3 per $1,000 on the combined household assessment, shared across both pensioners.
  // A one-partner-eligible couple and illness-separated couple are intentionally outside this MVP.
