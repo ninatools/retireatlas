@@ -166,14 +166,13 @@ function pension(){
  if(!valid(ids)){ $('pensionStatus').textContent='Please enter valid non-negative amounts.';return; }
  const household=$('household').value, homeowner=$('homeowner').value==='yes', age=num('pensionAge'), assets=num('assets'), financial=Math.min(num('financialAssets'),assets), other=num('otherIncome');
  const couple=household==='couple';
- const full=couple?1866:1237.70, freeIncome=couple?396:226, incomeReduction=couple?.25:.50;
+ const full=couple?1866:1237.70, freeIncome=couple?396:226, incomeReduction=.50;
  const fullAssets=couple?(homeowner?499000:766000):(homeowner?333000:600000);
  const cutoffAssets=couple?(homeowner?1121000:1388000):(homeowner?745750:1012750);
  const deemThreshold=couple?110600:66800, deem1=Math.min(financial,deemThreshold)*.0175, deem2=Math.max(0,financial-deemThreshold)*.0375;
- const deemed=deem1+deem2, fortnightIncome=other+(deemed*26/52);
+ const deemed=deem1+deem2, fortnightIncome=other+(deemed/26);
  let incomeRate=Math.max(0,full-Math.max(0,fortnightIncome-freeIncome)*incomeReduction);
- let assetsRate=Math.max(0,full-Math.ceil(Math.max(0,assets-fullAssets)/1000)*(couple?3:3));
- if(couple)assetsRate=Math.max(0,full-Math.ceil(Math.max(0,assets-fullAssets)/1000)*3);
+ let assetsRate=Math.max(0,full-Math.ceil(Math.max(0,assets-fullAssets)/1000)*3);
  if(assets>=cutoffAssets)assetsRate=0;
  // The couple reduction is A$3 per $1,000 on the combined household assessment, shared across both pensioners.
  // A one-partner-eligible couple and illness-separated couple are intentionally outside this MVP.
