@@ -44,12 +44,12 @@ main{max-width:1180px;margin:26px auto;padding:0 16px 40px}.hero{margin-bottom:2
 </div>
 <div class="section">
 <h3>Annual contributions before retirement</h3>
-<div class="field"><label for="salary">Annual salary before tax (AUD)</label><input id="salary" type="number" min="0" step="1000" value="85000" required><small>Used only to estimate employer Super Guarantee contributions.</small></div>
+<div class="field"><label for="salary">Annual salary before tax (AUD)</label><input id="salary" type="number" min="0" step="1000" value="85000" required><small>Assumed to be eligible ordinary-time earnings, excluding employer super. Used only to estimate employer Super Guarantee contributions.</small></div>
 <div class="two">
 <div class="field"><label for="sg">Employer super rate (%)</label><input id="sg" type="number" min="0" max="25" step="0.1" value="12" required></div>
 <div class="field"><label for="extra">Extra savings per year (AUD)</label><input id="extra" type="number" min="0" step="500" value="5000" required></div>
 </div>
-<p class="hint">The model assumes employer contributions are reduced by a 15% contributions-tax allowance. It does not model contribution caps, Division 293 tax, salary changes or eligibility exceptions.</p>
+<p class="hint">The model assumes employer contributions are reduced by a 15% contributions-tax allowance, with salary and annual contributions held constant in nominal dollars. It does not model the maximum super contribution base, concessional contribution caps, Division 293 tax, salary growth or eligibility exceptions.</p>
 </div>
 <div class="section">
 <h3>Assumptions</h3>
@@ -148,7 +148,7 @@ function simulate(){
  $('capitalNeeded').textContent=money(needed); $('gap').textContent=(gap>=0?'+':'−')+money(Math.abs(gap));
  $('gap').style.color=gap>=0?'#087f72':'#b42318';
  $('fundingFill').style.width=funded+'%'; $('fundingBar').setAttribute('aria-valuenow',String(Math.round(funded)));
- $('projectionNote').textContent='Projection period: '+years+' years. The estimate assumes steady annual returns, constant real spending and year-end contributions; it does not model investment volatility, tax on withdrawals or Age Pension in the drawdown simulation.';
+ $('projectionNote').textContent='Projection period: '+years+' years. The estimate assumes steady annual returns, constant nominal salary/contributions, constant real spending and year-end contributions; it does not model investment volatility, tax on withdrawals or Age Pension in the drawdown simulation.';
  draw(history,age,retire,inf);
 }
 function draw(history,age,retire,inf){
