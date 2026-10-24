@@ -130,11 +130,34 @@ const preciseMoney = value => new Intl.NumberFormat('en-AU',{style:'currency',cu
 const num = id => Number($(id).value);
 const clamp = (x,lo,hi) => Math.min(hi,Math.max(lo,x));
 const valid = (ids) => ids.every(id => $(id).checkValidity() && Number.isFinite(num(id)) && (id==='returnRate' ? num(id)>=-10 : num(id)>=0));
+function clearProjectionResults(){
+ ['nominalBalance','realBalance','spendingValue','realReturn','capitalNeeded','gap'].forEach(id=>{$(id).textContent='—';});
+ $('gap').style.color='';
+ $('fundingFill').style.width='0%';
+ $('fundingBar').setAttribute('aria-valuenow','0');
+ const canvas=$('projectionChart'),ctx=canvas.getContext('2d');
+ if(ctx)ctx.clearRect(0,0,canvas.width,canvas.height);
+}
+function ageValidationMessage(){
+ const age=num('age'),retire=num('retireAge'),life=num('lifeAge');
+ if(!Number.isFinite(age)||!Number.isFinite(retire)||!Number.isFinite(life))return '';
+ if(retire<=age)return 'Retirement age must be greater than your current age.';
+ if(life<=retire)return 'Plan-through age must be greater than retirement age.';
+ return '';
+}
 function simulate(){
  const ids=['age','retireAge','lifeAge','super','savings','salary','sg','extra','returnRate','inflation','expenses'];
- if(!valid(ids)){ $('projectionNote').textContent='Please check the highlighted inputs and enter valid values.'; return; }
+ if(!valid(ids)){
+ clearProjectionResults();
+ $('projectionNote').textContent='Please check the highlighted inputs and enter valid values. No projection is shown until all inputs are valid.';
+ return;
+ }
  const age=num('age'), retire=num('retireAge'), life=num('lifeAge'), startSuper=num('super'), startSavings=num('savings'), salary=num('salary'), sg=num('sg')/100, extra=num('extra'), nominal=num('returnRate')/100, inf=num('inflation')/100, expenses=num('expenses');
- if(retire<=age || life<=retire){ $('projectionNote').textContent='Retirement age must be greater than your current age, and plan-through age must be greater than retirement age.'; return; }
+ if(retire<=age || life<=retire){
+ clearProjectionResults();
+ $('projectionNote').textContent=ageValidationMessage()+' Please correct the ages and calculate again. No projection is shown for invalid ages.';
+ return;
+ }
  const years=Math.round(retire-age), real=(1+nominal)/(1+inf)-1;
  let s=startSuper, o=startSavings; const history=[{age:age,total:s+o}];
  for(let y=1;y<=years;y++){ s=s*(1+nominal)+salary*sg*(1-.15); o=o*(1+nominal)+extra; history.push({age:age+y,total:s+o}); }
@@ -187,6 +210,11 @@ function pension(){
  else $('pensionStatus').textContent='Indicative standard-rate result only. It assumes Australian domestic rates, no Work Bonus or Rent Assistance, no transitional rate, and (for couples) both partners eligible. Actual Centrelink calculations and rounding may differ.';
 }
 $('calcForm').addEventListener('submit',e=>{e.preventDefault();simulate();});
+$('calcForm').addEventListener('input',()=>{
+ clearProjectionResults();
+ const message=ageValidationMessage();
+ $('projectionNote').textContent=message ? message+' Please correct the ages and calculate again. No projection is shown for invalid ages.' : 'Your inputs have changed. Select “Calculate my retirement estimate” to update the projection.';
+});
 $('calcForm').addEventListener('reset',()=>setTimeout(simulate,0));
 $('pensionForm').addEventListener('submit',e=>{e.preventDefault();pension();});
 $('household').addEventListener('change',pension);$('homeowner').addEventListener('change',pension);
