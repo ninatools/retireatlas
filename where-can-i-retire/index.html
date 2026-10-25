@@ -273,6 +273,18 @@ footer a { font-weight:700; }
   .nav { padding:15px 17px; }
   .logo { font-size:20px; }
 }
+
+.currency-converter{margin:1rem 0 1.5rem;padding:1rem;border:1px solid #e5e1fb;border-radius:14px;background:#faf9ff}
+.currency-converter h3{margin:0 0 .35rem;color:var(--dark);font-size:1.05rem}
+.converter-intro,.converter-rate-note{font-size:.88rem;color:var(--muted);margin:.35rem 0 .75rem}
+.converter-controls{display:grid;grid-template-columns:minmax(100px,1.2fr) minmax(130px,1fr) auto minmax(130px,1fr);gap:.65rem;align-items:end}
+.converter-controls label{display:flex;flex-direction:column;gap:.3rem;font-size:.88rem;font-weight:600;color:var(--dark)}
+.converter-controls input,.converter-controls select{width:100%;min-width:0;box-sizing:border-box;padding:.65rem;border:1px solid #d7d2ec;border-radius:8px;background:#fff;color:#24213a;font:inherit}
+.converter-swap{padding:.62rem .75rem;border:0;border-radius:8px;background:var(--purple);color:#fff;font-size:1.1rem;cursor:pointer}
+.converter-result{font-weight:700;color:var(--dark);margin:.8rem 0 .3rem;overflow-wrap:anywhere}
+.converter-result.error{font-weight:500;color:#9b1c1c}
+@media(max-width:560px){.converter-controls{grid-template-columns:1fr 1fr}.converter-swap{grid-column:1/-1;grid-row:2;justify-self:center}.converter-controls label:nth-of-type(3){grid-column:1/-1}}
+
 </style>
 </head>
 <body>
@@ -332,6 +344,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">This is a national household average, not a recommended retirement budget or an estimate for one person. Housing, household size and location can make a substantial difference.</div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <div class="country-info">
     <div class="info-box">
       <h3>☀️ Climate</h3>
@@ -420,6 +467,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">This is average household expenditure, not an individual retirement budget. Costs vary by region, housing, household size and lifestyle.</div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <div class="country-info">
     <div class="info-box">
       <h3>🌦️ Climate</h3>
@@ -508,6 +590,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">Spain's published household expenditure measure includes imputed rent for some owner-occupied or provided accommodation. This means the figure is not directly comparable with the Portugal or Thailand figures shown above.</div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <div class="country-info">
     <div class="info-box">
       <h3>☀️ Climate</h3>
@@ -604,6 +721,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">INEGI's 2025 National Expenditure Survey reports average total current household expenditure. The average monthly monetary current expenditure was MXN 19,310. Figures describe households, not an individual retirement budget. <a href="https://www.inegi.org.mx/app/saladeprensa/noticia/11250" target="_blank" rel="noopener noreferrer">Official INEGI source ↗</a></div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <p class="country-cost-note"><strong>Cost of Living Index (Numbeo, 2026 Mid-Year): 44.4</strong> — excludes rent and is relative to New York City (100). It compares everyday consumer prices, not a monthly retirement budget. <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank" rel="noopener noreferrer">View source and methodology ↗</a></p>
   <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
   <div class="city-grid">
@@ -644,6 +796,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">DOSM reports mean monthly household consumption expenditure for 2024. This is a national household average, not an individual retirement budget; spending varies by state, household size and lifestyle. <a href="https://www.dosm.gov.my/portal-main/release-content/household-expenditure-survey-report--malaysia--states" target="_blank" rel="noopener noreferrer">Official DOSM source ↗</a></div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <p class="country-cost-note"><strong>Cost of Living Index (Numbeo, 2026 Mid-Year): 34.0</strong> — excludes rent and is relative to New York City (100). It compares everyday consumer prices, not a monthly retirement budget. <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank" rel="noopener noreferrer">View source and methodology ↗</a></p>
   <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
   <div class="city-grid">
@@ -685,6 +872,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">The U.S. Bureau of Labor Statistics reports average annual expenditures per consumer unit, a statistical unit that is not exactly the same as a household in every country. This is not an individual retirement budget. <a href="https://www.bls.gov/news.release/cesan.htm" target="_blank" rel="noopener noreferrer">Official BLS source ↗</a></div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <p class="country-cost-note"><strong>Cost of Living Index (Numbeo, 2026 Mid-Year): 69.7</strong> — excludes rent and is relative to New York City (100). It compares everyday consumer prices, not a monthly retirement budget. <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank" rel="noopener noreferrer">View source and methodology ↗</a></p>
   <div class="city-heading"><h3>Five cities to explore</h3><p>Examples to research, not a ranking.</p></div>
   <div class="city-grid">
@@ -756,6 +978,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">ONS reports average weekly household expenditure for April 2024 to March 2025. This is a national household average; costs vary by region and household composition and should not be treated as an individual retirement budget. <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/expenditure/bulletins/familyspendingintheuk/april2024tomarch2025" target="_blank" rel="noopener noreferrer">Official ONS source ↗</a></div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <p class="country-cost-note"><strong>Cost of Living Index (Numbeo, 2026 Mid-Year): 68.2</strong> — excludes rent and is relative to New York City (100). It compares everyday consumer prices, not a monthly retirement budget. <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank" rel="noopener noreferrer">View source and methodology ↗</a></p>
   <div class="city-heading"><h3>Five cities to explore</h3><p>Examples to research, not a ranking.</p></div>
   <div class="city-grid">
@@ -827,6 +1084,41 @@ footer a { font-weight:700; }
     </div>
   </div>
   <div class="note">This figure is from INEC's 2017/18 survey and refers to urban households, so it is old and is not a current nationwide estimate. It is included for transparency only and should not be compared directly with newer surveys. B/. (balboa) is at parity with the US dollar. <a href="https://www.inec.gob.pa/Aplicaciones/eigh1718/datos/resultados/Cuadro9.pdf" target="_blank" rel="noopener noreferrer">Official INEC table ↗</a></div>
+
+  <section class="currency-converter" aria-label="Currency converter">
+    <h3>💱 Currency converter</h3>
+    <p class="converter-intro">Convert an amount to another currency using the latest available reference exchange rate.</p>
+    <div class="converter-controls">
+      <label>Amount
+        <input class="converter-amount" type="number" min="0" step="any" value="100" inputmode="decimal" aria-label="Amount to convert">
+      </label>
+      <label>From
+        <select class="converter-from" aria-label="Source currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+      <button class="converter-swap" type="button" aria-label="Swap currencies">⇄</button>
+      <label>To
+        <select class="converter-to" aria-label="Target currency">
+        <option value="EUR">Euro (€)</option>
+        <option value="THB">Thai baht (฿)</option>
+        <option value="GBP">British pound (£)</option>
+        <option value="USD">US dollar ($)</option>
+        <option value="MYR">Malaysian ringgit (RM)</option>
+        <option value="MXN">Mexican peso (MXN)</option>
+        <option value="PAB">Panamanian balboa (B/.)</option>
+        </select>
+      </label>
+    </div>
+    <p class="converter-result" aria-live="polite">Choose currencies to convert.</p>
+    <p class="converter-rate-note">Rates are reference rates, not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).</p>
+  </section>
   <p class="country-cost-note"><strong>Cost of Living Index (Numbeo, 2026 Mid-Year): 46.5</strong> — excludes rent and is relative to New York City (100). It compares everyday consumer prices, not a monthly retirement budget. <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank" rel="noopener noreferrer">View source and methodology ↗</a></p>
   <div class="city-heading"><h3>Five cities and towns to explore</h3><p>Examples to research, not a ranking.</p></div>
   <div class="city-grid">
@@ -860,5 +1152,60 @@ footer a { font-weight:700; }
   <p>Research carefully. Plan confidently.</p>
   <p><a href="#top">Back to top ↑</a></p>
 </footer>
+
+<script>
+(function(){
+  const rateCache = new Map();
+  const currencyNames = {EUR:"Euro",THB:"Thai baht",GBP:"British pound",USD:"US dollar",MYR:"Malaysian ringgit",MXN:"Mexican peso",PAB:"Panamanian balboa"};
+  function apiCode(code){ return code === "PAB" ? "USD" : code; }
+  async function getRate(from,to){
+    if(from===to) return {rate:1,date:null};
+    const key=from+"_"+to;
+    if(rateCache.has(key)) return rateCache.get(key);
+    const promise=fetch("https://api.frankfurter.dev/v2/rate/"+encodeURIComponent(from)+"/"+encodeURIComponent(to))
+      .then(response=>{if(!response.ok) throw new Error("Exchange-rate service is temporarily unavailable.");return response.json();})
+      .then(data=>({rate:Number(data.rate),date:data.date}));
+    rateCache.set(key,promise);
+    try{return await promise;}catch(error){rateCache.delete(key);throw error;}
+  }
+  document.querySelectorAll(".currency-converter").forEach(function(box){
+    const amount=box.querySelector(".converter-amount");
+    const from=box.querySelector(".converter-from");
+    const to=box.querySelector(".converter-to");
+    const result=box.querySelector(".converter-result");
+    const note=box.querySelector(".converter-rate-note");
+    from.value="EUR"; to.value="USD";
+    let runId=0;
+    function format(value,code){
+      try{return new Intl.NumberFormat(undefined,{style:"currency",currency:code,maximumFractionDigits:2}).format(value);}
+      catch(e){return value.toLocaleString(undefined,{maximumFractionDigits:2})+" "+code;}
+    }
+    async function convert(){
+      const id=++runId, value=Number(amount.value), source=from.value, target=to.value;
+      result.classList.remove("error");
+      if(amount.value.trim()===""||!Number.isFinite(value)||value<0){result.textContent="Enter a valid amount of zero or more.";result.classList.add("error");return;}
+      result.textContent="Getting latest available reference rate…";
+      try{
+        const rateFrom=apiCode(source), rateTo=apiCode(target);
+        const data=await getRate(rateFrom,rateTo);
+        if(id!==runId)return;
+        const converted=value*data.rate;
+        result.textContent=format(value,source)+" = "+format(converted,target);
+        note.textContent=(data.date?"Rate date: "+data.date+". ":"")+"Reference rates only—not cash-exchange or bank card rates. Panama's balboa is treated as equal to the US dollar (1 PAB = 1 USD).";
+      }catch(error){
+        if(id!==runId)return;
+        result.textContent="Sorry, the exchange rate could not be loaded. Please check your internet connection and try again.";
+        result.classList.add("error");
+      }
+    }
+    [amount,from,to].forEach(el=>el.addEventListener(el===amount?"input":"change",convert));
+    box.querySelector(".converter-swap").addEventListener("click",function(){
+      const old=from.value;from.value=to.value;to.value=old;convert();
+    });
+    convert();
+  });
+})();
+</script>
+
 </body>
 </html>
