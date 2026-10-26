@@ -23,7 +23,8 @@ body {
   font-family:Arial,Helvetica,sans-serif;
   color:var(--dark);
   background:#fff;
-  line-height:1.65;
+  font-size:19px;
+  line-height:1.6;
 }
 a { color:var(--purple); }
 a:focus-visible,button:focus-visible {
@@ -103,7 +104,7 @@ main {
   margin:0 0 12px;
   letter-spacing:-.5px;
 }
-.intro { color:var(--muted); max-width:780px; }
+.intro { color:var(--muted); max-width:780px; font-size:19px; line-height:1.6; }
 .country-nav {
   display:flex;
   flex-wrap:wrap;
@@ -145,7 +146,7 @@ main {
 .index-table tbody tr:last-child td { border-bottom:0; }
 .index-table td:not(:first-child),
 .index-table th:not(:first-child) { text-align:right; font-variant-numeric:tabular-nums; }
-.index-note { color:var(--muted); font-size:14px; }
+.index-note { color:var(--muted); font-size:16px; line-height:1.55; }
 .country {
   padding:30px;
   border:1px solid var(--border);
@@ -164,7 +165,7 @@ main {
   line-height:1.2;
 }
 .country h2 { margin:0; }
-.country-subtitle { color:var(--muted); margin:4px 0 0; }
+.country-subtitle { color:var(--muted); margin:4px 0 0; font-size:19px; line-height:1.6; }
 .stats {
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -193,7 +194,8 @@ main {
   border-left:4px solid var(--purple);
   background:#faf9ff;
   border-radius:0 10px 10px 0;
-  font-size:14px;
+  font-size:16px;
+  line-height:1.6;
 }
 .country-info {
   display:grid;
@@ -207,11 +209,11 @@ main {
   padding:18px;
 }
 .info-box h3 { margin:0 0 8px; font-size:18px; }
-.info-box p { margin:0 0 10px; color:var(--muted); }
+.info-box p { margin:0 0 10px; color:var(--muted); font-size:19px; line-height:1.6; }
 .info-box a { font-weight:700; }
 .city-heading { margin:28px 0 14px; }
 .city-heading h3 { margin:0; font-size:22px; }
-.city-heading p { color:var(--muted); margin:4px 0; }
+.city-heading p { color:var(--muted); margin:4px 0; font-size:18px; line-height:1.6; }
 .city-grid {
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
@@ -233,8 +235,8 @@ main {
   margin:0 0 14px;
   background:#f1effb;
 }
-.photo-credit { display:block; font-size:11px; line-height:1.45; color:var(--muted); margin:-8px 0 12px; }
-.photo-credit a { font-size:11px; font-weight:400; text-decoration:underline; }
+.photo-credit { display:block; font-size:14px; line-height:1.5; color:var(--muted); margin:-8px 0 12px; overflow-wrap:anywhere; }
+.photo-credit a { font-size:14px; font-weight:400; text-decoration:underline; }
 .photo-modification { color:var(--muted); }
 .country-photo {
   display:block;
@@ -246,11 +248,11 @@ main {
   margin:18px 0 20px;
   background:#f1effb;
 }
-.country-photo-credit { display:block; text-align:right; font-size:11px; color:var(--muted); margin:-14px 0 18px; }
-.country-photo-credit a { font-size:11px; font-weight:400; }
-.city-card p { margin:0 0 12px; color:#55566a; }
+.country-photo-credit { display:block; text-align:right; font-size:14px; line-height:1.5; color:var(--muted); margin:-14px 0 18px; overflow-wrap:anywhere; }
+.country-photo-credit a { font-size:14px; font-weight:400; }
+.city-card p { margin:0 0 12px; color:#55566a; font-size:19px; line-height:1.6; }
 .city-card a {
-  font-size:14px;
+  font-size:16px;
   font-weight:700;
   text-decoration:none;
 }
@@ -262,7 +264,8 @@ footer {
   padding:30px 22px;
   text-align:center;
   color:var(--muted);
-  font-size:14px;
+  font-size:16px;
+  line-height:1.6;
 }
 footer a { font-weight:700; }
 @media(max-width:650px) {
