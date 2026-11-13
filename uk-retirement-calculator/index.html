@@ -69,13 +69,17 @@ const money = n => new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP
 const num = id => Number($(id).value);
 const fields = ['state','db','dc','other'];
 function calculate(){
-  const income = fields.reduce((sum,id)=>sum+num(id),0);
-  const ani = income;
-  if(fields.some(id=>$(id).value.trim()===''||!Number.isFinite(num(id))||num(id)<0)){
-    $('error').textContent='Please enter valid non-negative annual amounts for all pension income fields.';
+  if(fields.some(id=>{
+    const raw=$(id).value.trim();
+    const value=num(id);
+    return raw===''||!Number.isFinite(value)||!Number.isInteger(value)||value<0||value>100000000;
+  })){
+    $('error').textContent='Please enter a whole-pound annual amount from £0 to £100,000,000 in every pension income field.';
     $('error').style.display='block';return;
   }
   $('error').style.display='none';
+  const income = fields.reduce((sum,id)=>sum+num(id),0);
+  const ani = income;
   const pa = Math.max(0,12570 - Math.floor(Math.max(0,ani-100000)/2));
   const taxable = Math.max(0,income-pa);
   let tax=0;
