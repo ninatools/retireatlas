@@ -44,6 +44,33 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Alicante | acediscovery | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Panorama-view-Alicante](https://commons.wikimedia.org/wiki/File:Panorama-view-Alicante.jpg) |
 | Seville | Thomas Weyrauch | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Seville panorama](https://commons.wikimedia.org/wiki/File:Seville_panorama.jpg) |
 
+## United Kingdom city photographs
+
+| City | Photographer / attribution | License | Source |
+|---|---|---|---|
+| Bath | MontanNito | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Royal Crescent, Bath](https://commons.wikimedia.org/wiki/File:Royal_Crescent,_Bath.jpg) |
+| Cardiff | Nadezna1971 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Cardiff Bay, Wales](https://commons.wikimedia.org/wiki/File:Cardiff_Bay,_Wales.jpg) |
+| Norwich | Andrew Hurley | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Norwich Skyline](https://commons.wikimedia.org/wiki/File:Norwich_Skyline.jpg) |
+| York | David Oxtaby | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [The York Shambles](https://commons.wikimedia.org/wiki/File:The_York_Shambles.jpg) |
+
+## United States city photographs
+
+| City | Photographer / attribution | License | Source |
+|---|---|---|---|
+| Asheville | mdl70 | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Downtown Asheville](https://commons.wikimedia.org/wiki/File:Downtown_Asheville.jpg) |
+| Philadelphia | Mefman00 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [The Philadelphia skyline](https://commons.wikimedia.org/wiki/File:The_Philadelphia_skyline.jpg) |
+| Pittsburgh | Derek Cashman (image subsequently altered by Slashme) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) or GFDL | [Pittsburgh skyline view](https://commons.wikimedia.org/wiki/File:Pittsburgh_skyline_view.jpg) |
+| Tampa | Sonny SideUp | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Tampa Skyline](https://commons.wikimedia.org/wiki/File:Tampa_Skyline.jpg) |
+
+## Unsplash city photographs — source-page check pending
+
+| City | Photographer shown on page | License | Current embedded image |
+|---|---|---|---|
+| Edinburgh | Jordan Ryskamp | Unsplash License | https://images.unsplash.com/photo-1682403683987-bae2acb07f39?auto=format&fit=crop&w=1200&q=80 |
+| Tucson | JC Cervantes | Unsplash License | https://images.unsplash.com/photo-1698273192186-671d21c48a50?auto=format&fit=crop&w=1200&q=80 |
+
+The exact Unsplash photo pages for Edinburgh and Tucson were not independently located during this review. The site currently displays the photographer names and Unsplash License, but the source-page attribution should be checked before treating these two images as fully verified for reuse.
+
 ## Technical notes
 
 - Images are embedded from Wikimedia Commons using its `Special:FilePath` endpoint, with a width hint to request a suitably sized version.
