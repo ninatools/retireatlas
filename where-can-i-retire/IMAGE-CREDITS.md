@@ -66,10 +66,10 @@ Please retain attribution and the license link when reusing any image. For CC BY
 
 | City | Photographer shown on page | License | Current embedded image |
 |---|---|---|---|
-| Edinburgh | Jordan Ryskamp | Unsplash License | https://images.unsplash.com/photo-1682403683987-bae2acb07f39?auto=format&fit=crop&w=1200&q=80 |
-| Tucson | JC Cervantes | Unsplash License | https://images.unsplash.com/photo-1698273192186-671d21c48a50?auto=format&fit=crop&w=1200&q=80 |
+| Edinburgh | Jordan Ryskamp | [Unsplash License](https://unsplash.com/license) | [A view of a city with a castle in the background](https://unsplash.com/photos/a-view-of-a-city-with-a-castle-in-the-background-NtL2zfmU7hw) (embedded image: `photo-1682403683987-bae2acb07f39`) |
+| Tucson | JC Cervantes | [Unsplash License](https://unsplash.com/license) | [A view of a city with mountains in the background](https://unsplash.com/photos/a-view-of-a-city-with-mountains-in-the-background-Gf0BpriZJtY) (embedded image: `photo-1698273192186-671d21c48a50`) |
 
-The exact Unsplash photo pages for Edinburgh and Tucson were not independently located during this review. The site currently displays the photographer names and Unsplash License, but the source-page attribution should be checked before treating these two images as fully verified for reuse.
+The exact Unsplash photo pages for Edinburgh and Tucson were located and matched to the photographer names and subject descriptions shown on the city pages. The current embedded image identifiers are recorded above.
 
 ## Technical notes
 
