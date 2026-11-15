@@ -1,6 +1,6 @@
 # Where Can I Retire? — Photograph credits
 
-Photographs on this page are real photographs hosted by Wikimedia Commons. The page links each image to its Commons file page and shows a short attribution beside the image. This file records the selected source pages and license information checked on 19 October 2026.
+Photographs on this page are real photographs hosted by Wikimedia Commons. The page links each image to its Commons file page and shows a short attribution beside the image. This file records the selected source pages and license information checked on 15 November 2026.
 
 Please retain attribution and the license link when reusing any image. For CC BY and CC BY-SA images, indicate if you crop or otherwise modify the image. CC BY-SA may require adaptations to be shared under the same or a compatible license. The image's Commons page is the authoritative source for current details.
 
@@ -16,8 +16,8 @@ Please retain attribution and the license link when reusing any image. For CC BY
 
 | City | Photographer / attribution | License | Source |
 |---|---|---|---|
-| Tavira | Vitor Oliveira | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) | [Tavira - Portugal](https://commons.wikimedia.org/wiki/File:Tavira_-_Portugal_(33540319901).jpg) |
-| Funchal | Koshelyev | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Panoramic View of Funchal](https://commons.wikimedia.org/wiki/File:Panoramic_View_of_Funchal_from_Madeira_Botanical_Garden.jpg) |
+| Tavira | Marc Ryckaert | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Tavira Ponte Romana R02](https://commons.wikimedia.org/wiki/File:Tavira_Ponte_Romana_R02.jpg) |
+| Funchal | Mstyslav Chernov | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [View of Funchal. Portugal, Autonomous Region of Madeira, Southwestern Europe](https://commons.wikimedia.org/wiki/File:View_of_Funchal._Portugal,_Autonomous_Region_of_Madeira,_Southwestern_Europe.jpg) |
 | Braga | Otto Domes | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Braga Panorama](https://commons.wikimedia.org/wiki/File:Braga_Panorama.jpg) |
 | Lisbon | Bex Walton | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Yellow tram in Lisbon, Portugal](https://commons.wikimedia.org/wiki/File:Yellow_tram_in_Lisbon,_Portugal.jpg) |
 | Coimbra | Carlos Luis M C da Cruz | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Coimbra panoramica](https://commons.wikimedia.org/wiki/File:Coimbra_panoramica.JPG) |
@@ -45,6 +45,6 @@ Please retain attribution and the license link when reusing any image. For CC BY
 ## Technical notes
 
 - Images are embedded from Wikimedia Commons using its `Special:FilePath` endpoint, with a width hint to request a suitably sized version.
-- Images use consistent responsive aspect ratios and `object-fit: cover`; the crop may differ from the original image.
+- Images use responsive aspect ratios and `object-fit: cover`; the crop may differ from the original image.
 - The image sources are third-party hosted rather than copied into this repository. If a source changes or becomes unavailable, replace it with a checked source and update the attribution here and beside the image.
 - This page provides general retirement research information and is not immigration, healthcare, financial or tax advice.
