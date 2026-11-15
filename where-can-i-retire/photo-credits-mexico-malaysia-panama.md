@@ -31,10 +31,10 @@ These photographs are linked from Wikimedia Commons using its Special:FilePath s
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
 | Country overview | Panama Skyline.jpg | Nico2panama | CC BY-SA 3.0 (older CC BY-SA/GFDL terms also listed) | https://commons.wikimedia.org/wiki/File:Panama_Skyline.jpg |
-| Panama City | Casco viejo panama.jpg | Editorpana | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Casco_viejo_panama.jpg |
-| Boquete | Boquete, Panama.jpg | Michael (moik) McCullough | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Boquete,_Panama.jpg |
+| Panama City | Casco Viejo, Panama City, Panama.jpg | RB Photo | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Casco_Viejo,_Panama_City,_Panama.jpg |
+| Boquete | Boquete Panama (27211038742).jpg | dronepicr | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Boquete_Panama_(27211038742).jpg |
 | David | David-Panama.jpg | Moto-gundy | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:David-Panama.jpg |
-| Coronado | Coronado Beach.JPG | Myukie | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Coronado_Beach.JPG |
+| Coronado | Coronado Beach (4223441009).jpg | Sandra Cohen-Rose and Colin Rose | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Coronado_Beach_(4223441009).jpg |
 | Bocas del Toro | Bocas del Toro Panama.jpg | Dronepicr | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Bocas_del_Toro_Panama.jpg |
 
 ## Attribution and license notes
