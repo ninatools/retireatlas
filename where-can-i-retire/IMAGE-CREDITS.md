@@ -8,9 +8,11 @@ Please retain attribution and the license link when reusing any image. For CC BY
 
 | Section | Photographer / attribution | License | Source |
 |---|---|---|---|
-| Portugal | Ned Dwyer | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Algarve coast of Portugal](https://commons.wikimedia.org/wiki/File:Algarve_coast_of_Portugal.jpg) |
-| Thailand | Azreey | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Bangkok - City skyline at mid day](https://commons.wikimedia.org/wiki/File:Bangkok_-_City_skyline_at_mid_day.JPG) |
+| Portugal | Michael Gaylard | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [A Panoramic View of Porto's Ribeira District (55246977394)](https://commons.wikimedia.org/wiki/File:A_Panoramic_View_of_Porto%27s_Ribeira_District_(55246977394).jpg) |
+| Thailand | Vyacheslav Argenberg | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Ko Tapu (James Bond) Island in Phang Nga Bay, Thailand](https://commons.wikimedia.org/wiki/File:Ko_Tapu_(James_Bond)_Island_in_Phang_Nga_Bay,_Thailand.jpg) |
 | Spain | Gica-cobra | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Plaza de España de Sevilla](https://commons.wikimedia.org/wiki/File:Plaza_de_Espana_de_Sevilla.jpg) |
+| United States | Gustavo Collins | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Statue of liberty and nyc skyline](https://commons.wikimedia.org/wiki/File:Statue_of_liberty_and_nyc_skyline.jpg) |
+| United Kingdom | Oleg Yunakov | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [London skyline view from the Millennium Bridge looking east down the River Thames](https://commons.wikimedia.org/wiki/File:London_skyline_view_from_the_Millennium_Bridge_looking_east_down_the_River_Thames.jpg) |
 
 ## Portugal city photographs
 
