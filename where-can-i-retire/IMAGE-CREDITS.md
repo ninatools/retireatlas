@@ -62,7 +62,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 | Pittsburgh | Derek Cashman (image subsequently altered by Slashme) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) or GFDL | [Pittsburgh skyline view](https://commons.wikimedia.org/wiki/File:Pittsburgh_skyline_view.jpg) |
 | Tampa | Sonny SideUp | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) | [Tampa Skyline](https://commons.wikimedia.org/wiki/File:Tampa_Skyline.jpg) |
 
-## Unsplash city photographs — source-page check pending
+## Unsplash city photographs
 
 | City | Photographer shown on page | License | Current embedded image |
 |---|---|---|---|
