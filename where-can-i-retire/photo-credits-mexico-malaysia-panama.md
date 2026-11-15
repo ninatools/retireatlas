@@ -2,7 +2,7 @@
 
 Research and license check date: 21 October 2026.
 
-These photographs are linked from Wikimedia Commons using its Special:FilePath service. The linked file page is the authoritative place to re-check the current author, license, and file status before publication. No image has been modified by this project.
+These photographs are linked from Wikimedia Commons using its Special:FilePath service. The linked file page is the authoritative place to re-check the current author, license, and file status before publication. The site requests resized versions and uses responsive cropping; the visible image may therefore be resized or cropped for layout.
 
 ## Mexico
 
@@ -19,11 +19,11 @@ These photographs are linked from Wikimedia Commons using its Special:FilePath s
 | Use | Photograph | Author | License | Source |
 |---|---|---|---|---|
 | Country overview | Kuala Lumpur Cityscape.jpg | Saad Abdullah | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kuala_Lumpur_Cityscape.jpg |
-| Penang and George Town | Penang shophouses, Magazine Road, George Town.jpg | Vnonymous | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Penang_shophouses,_Magazine_Road,_George_Town.jpg |
+| Penang and George Town | Penang shophouses, Magazine Road, George Town.jpg | Vnonymous | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Penang_shophouses,_Magazine_Road,_George_Town.jpg |
 | Kuala Lumpur | Petronas twin towers.jpg | Honzasoukup | CC BY 3.0 (GFDL also listed) | https://commons.wikimedia.org/wiki/File:Petronas_twin_towers.jpg |
-| Ipoh | Ipoh.jpg | Adiyon84 | Public domain dedication by author | https://commons.wikimedia.org/wiki/File:Ipoh.jpg |
+| Ipoh | Jalan Yau Tet Shin 4.jpg | Slleong | CC0 1.0 | https://commons.wikimedia.org/wiki/File:Jalan_Yau_Tet_Shin_4.jpg |
 | Melaka | Melaka-Dutch-Square-2164.jpg | Vmenkov | CC BY-SA 3.0 (other older CC BY-SA/GFDL terms also listed) | https://commons.wikimedia.org/wiki/File:Melaka-Dutch-Square-2164.jpg |
-| Kota Kinabalu | Kota Kinabalu Sunset.jpg | Kevin85Sam | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Kota_Kinabalu_Sunset.jpg |
+| Kota Kinabalu | Kota Kinabalu during the day-2.jpg | Kanzcech | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Kota_Kinabalu_during_the_day-2.jpg |
 
 ## Panama
 
