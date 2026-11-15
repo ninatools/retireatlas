@@ -38,7 +38,7 @@ Please retain attribution and the license link when reusing any image. For CC BY
 |---|---|---|---|
 | Valencia | Juan Emilio Prades Bel | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Panorámica de la ciudad de Valencia](https://commons.wikimedia.org/wiki/File:Panor%C3%A1mica_de_la_ciudad_de_Valencia,_Espa%C3%B1a.jpg) |
 | Málaga | Triptosia | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Málaga City](https://commons.wikimedia.org/wiki/File:M%C3%A1laga_City.jpg) |
-| Granada | Santiagova | [CC BY-SA 3.0 Spain](https://creativecommons.org/licenses/by-sa/3.0/es/) | [Alhambra, Granada](https://commons.wikimedia.org/wiki/File:Alhambra,_Granada.jpg) |
+| Granada | Slaunger | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Alhambra evening panorama Mirador San Nicolas sRGB-1](https://commons.wikimedia.org/wiki/File:Alhambra_evening_panorama_Mirador_San_Nicolas_sRGB-1.jpg) |
 | Alicante | acediscovery | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Panorama-view-Alicante](https://commons.wikimedia.org/wiki/File:Panorama-view-Alicante.jpg) |
 | Seville | Thomas Weyrauch | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | [Seville panorama](https://commons.wikimedia.org/wiki/File:Seville_panorama.jpg) |
 
