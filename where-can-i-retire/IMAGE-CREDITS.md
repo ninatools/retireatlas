@@ -26,11 +26,11 @@ Please retain attribution and the license link when reusing any image. For CC BY
 
 | City | Photographer / attribution | License | Source |
 |---|---|---|---|
-| Chiang Mai | Jonathan.Gab. | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Chiang Mai View from Doi Suthep](https://commons.wikimedia.org/wiki/File:Chiang_Mai_View_from_Doi_Suthep.jpg) |
-| Bangkok | Tournasol7 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Wat Arun in Bangkok](https://commons.wikimedia.org/wiki/File:Wat_Arun_in_Bangkok_(1).jpg) |
+| Chiang Mai | Philip Nalangan | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) | [Doi Suthep Temple Chiang Mai Thailand](https://commons.wikimedia.org/wiki/File:Doi_Suthep_Temple_Chiang_Mai_Thailand.jpg) |
+| Bangkok | OPK-Photography | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Bangkok, Thailand, Chao Praya, 2024](https://commons.wikimedia.org/wiki/File:Bangkok,_Thailand,_Chao_Praya,_2024.jpg) |
 | Hua Hin | Elmschrat | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Hua Hin Beach](https://commons.wikimedia.org/wiki/File:01_Hua_Hin_Beach.jpg) |
 | Phuket | Mussi Katz | [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) | [Phuket old town](https://commons.wikimedia.org/wiki/File:Phuket_old_town_(52549766215).jpg) |
-| Pattaya | PattayaPatrol | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [Pattaya beachfront promenade and skyline](https://commons.wikimedia.org/wiki/File:DFC_5497_Strolling_along_Pattaya_Beach_as_palms_frame_the_skyline_and_the_PATTAYA_sign_on_the_distant_hill.jpg) |
+| Pattaya | PattayaPatrol | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) | [DFC 4518 Sun-soaked city beach with high-rise skyline palm trees and people enjoying a calm day by the water](https://commons.wikimedia.org/wiki/File:DFC_4518_Sun-soaked_city_beach_with_high-rise_skyline_palm_trees_and_people_enjoying_a_calm_day_by_the_water.jpg) |
 
 ## Spain city photographs
 
